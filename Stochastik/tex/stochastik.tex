@@ -1,0 +1,93 @@
+\documentclass[paper=a4,10pt]{scrartcl}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+\usepackage{fancyref}
+
+\usepackage[numbers,square,sort]{natbib} %praktikumsquellenvorgabe
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{url}
+%\usepackage{hyperref}
+%\usepackage{multibib}
+\bibliographystyle{unsrt}
+
+
+\title{Stochastik}
+\author{Katrin Strassen, Robert Kummer}
+\date{2019}
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{$\sigma$-Algebra}
+Sei $\Omega$ eine nichtleere Menge und $\mathcal{P}(\Omega)$ die Potenzmenge dieser Menge. Eine Menge von Teilmengen $\mathcal{A} \subset \mathcal{P}(\Omega)$ (auch Mengensystem genannt) heißt $\sigma$-Algebra auf, oder über $\Omega$, wenn sie die folgenden drei Bedingungen erfüllt:
+
+\begin{enumerate}
+	\item $\mathcal{A}$ enthält die Grundmenge, also: $\Omega \in \mathcal{A}$
+	\item $\mathcal{A}$ ist stabil bezüglich der Komplementbildung. Ist also $A \in \mathcal{A}$, dann ist auch $A^{\mathrm{C}} \in \mathcal{A}$.
+	\item $\mathcal{A}$ ist stabil bezüglich abzählbarer Vereinigungen. Sind also die Mengen $A_1, A_2, A_3, \dots$ in $\mathcal{A}$ enthalten, so ist auch $\bigcup_{i=1}^\infty$ in $\mathcal{A}$ enthalten.
+\end{enumerate}
+
+\section{Wahrscheinlichkeitsmaß}
+Gegeben sei eine Menge $\Omega$, die Ergebnismenge und eine $\sigma$-Algebra $\Sigma$ auf dieser Menge (das Ereignissystem).\\
+
+\noindent
+Dann heißt eine Abbildung
+\begin{equation}
+P: \Sigma \rightarrow [0,1]
+\end{equation}
+Wahrscheinlichkeitsmaß, wenn sie die folgenden Bedinungen erfüllt.
+
+\paragraph{Normiertheit:}
+\begin{equation}
+P(\Omega) = 1
+\end{equation}
+
+\paragraph{$\sigma$-Additivität:}
+Für jede abzählbare Folge von paarweise disjunkten Mengen $A_1, A_2, A_3, \dots$ aus $\Sigma$ gilt
+\begin{equation}
+P\left( \bigcup^{\infty}_{i=1}A_i\right) = \sum_{i=1}^{\infty} P(A_i). 
+\end{equation} 
+
+\noindent
+Es gilt also, dass die Wahrscheinlichkeit für die Vereinigung zweier Ereignisse gleich groß ist wie die Summe der Einzelwahrscheinlichkeiten der Ereignisse.
+
+\section{Wahrscheinlichkeitsraum}
+Sei $\Omega$ eine beliebige \textbf{Ergebnis}menge. Sie umfasst alle möglichen Ergebnisse von einem Zufallsvorgang. Beim Würfeln ergibt sich also beispielsweise $\Omega = \{ 1,2,3,4,5,6\}$.
+
+\noindent
+Nun wird $\Sigma$ als eine $\sigma$"=Algebra über $\Omega$ definiert. Die Elemente von $\Sigma$ werden auch Ereignisse genannt. 
+
+\noindent
+Als letztes wird ein Wahrscheinlichkeitsmaß $P: \Sigma \rightarrow [0,1]$ benötigt. Das Tripel $(\Omega, \Sigma, P)$ ist dann ein Wahrscheinlichkeitsraum.
+ 
+
+\section{Messraum}
+Ein Tupel $(\Omega, \Sigma)$ heißt Messraum, wenn $\Omega$ eine beliebige Grundmenge ist und $\Sigma$ eine $\sigma$-Algebra über $\Omega$ ist.
+
+In der Stochastik wird der Messraum auch Ereignisraum genannt und ist einfach ein Wahrscheinlichkeitsraum ohne Wahrscheinlichkeitsmaß.
+
+
+%\section{Übergangskern}
+%Man hat zwei Messräume $(\Omega_0, \Sigma_0)$ und $(\Omega_1, \Sigma_1)$. Eine Abbildung $K: \Omega_0 \times \Sigma_1 \rightarrow [0, \infty)$ heißt Übergangskern von $(\Omega_0, \Sigma_0)$ nach $(\Omega_1, \Sigma_1)$, wenn gilt:
+
+$\bullet$ Für jedes $x \in \Omega_0$ ist $K(x,\ \cdot \ )$ ein Maß auf $(\Omega_1, \Sigma_1)$.
+
+$\bullet$ Für jedes $S \in \Sigma_1$ ist $K(\ \cdot \ , S)$ eine $\Sigma_0$-messbare Abbildung.
+
+
+\end{document}
