@@ -15,7 +15,7 @@
 \usepackage{amssymb}
 
 \usepackage{url}
-%\usepackage{hyperref}
+\usepackage{hyperref}
 %\usepackage{multibib}
 \bibliographystyle{unsrt}
 
@@ -32,6 +32,29 @@
 \newpage
 \pagenumbering{arabic}
 \setcounter{page}{1}
+\section{Grundbegriffe}
+\subsection{Urbild}
+Seien $A$ und $B$ zwei Mengen, $f: A \rightarrow B$ eine Funktion und $M$ eine Teilmenge von $B$. Die Menge
+\begin{equation}
+f^{-1}(M) := \{ x \in A \ | \ f(x) \in M \}
+\end{equation}
+wird Urbild von $M$ unter $f$ genannt. Das Urbild ist damit ein Wert der Urbildfunktion, die jedem Element $M$ der Potenzmenge $\mathcal{P}(B)$ das Urbild $f^{-1}(M)$ als Element der Potenzmenge $\mathcal{P}(A)$ zuordnet.\\
+
+\noindent
+\textit{In eigenen Worten: Die Funktion $f$ bildet Elemente von $A$ auf Elemente von $B$ ab. Das Urbild von einer Teilmenge $M \subset B$ ist die Teilmenge aller Werte aus $A$ die durch die Funktion auf Werte in $M$ abgebildet werden.}\\
+
+\noindent
+Für das Urbild von einelementigen Teilmengen schreibt man auch:
+\begin{equation}
+f^{-1}(\{b\}) := f^{-1}(b).
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{../Bilder/urbild.png}
+\label{urbild}
+\caption{Beispiel: Das Urbild von $M=\{0\} \subset B$ ist $\{2,3,5\} \subset A$.}
+\end{figure}
 
 \section{$\sigma$-Algebra}
 Sei $\Omega$ eine nichtleere Menge und $\mathcal{P}(\Omega)$ die Potenzmenge dieser Menge. Eine Menge von Teilmengen $\mathcal{A} \subset \mathcal{P}(\Omega)$ (auch Mengensystem genannt) heißt $\sigma$-Algebra auf, oder über $\Omega$, wenn sie die folgenden drei Bedingungen erfüllt:
@@ -79,15 +102,34 @@ Als letztes wird ein Wahrscheinlichkeitsmaß $P: \Sigma \rightarrow [0,1]$ benö
 \section{Messraum}
 Ein Tupel $(\Omega, \Sigma)$ heißt Messraum, wenn $\Omega$ eine beliebige Grundmenge ist und $\Sigma$ eine $\sigma$-Algebra über $\Omega$ ist.
 
+\noindent
 In der Stochastik wird der Messraum auch Ereignisraum genannt und ist einfach ein Wahrscheinlichkeitsraum ohne Wahrscheinlichkeitsmaß.
+
+\noindent
+Eine Menge $S$ wird messbare Menge genannt, wenn $S \in \Sigma$ gilt.
+
+\section{messbare Funktion}
+Seien $(\Omega_1, \Sigma_1)$ und $(\Omega_2, \Sigma_2)$ zwei Messräume. Eine Funktion $f: \Omega_1 \rightarrow \Omega_2$ wird $\Sigma_1$"=$\Sigma_2$"=messbar genannt, wenn für alle $S_2 \in \Sigma_2$ gilt, dass das Urbild von $S_2$ unter $f$ ein Element aus $\Sigma_1$ ist:
+\begin{equation}
+f^{-1}(S_2) \in \Sigma_1.
+\end{equation}
+
+\noindent
+\textit{In eigenen Worten: Aus Wahrscheinlichkeitssicht: Die Funktion $f$ bildet Ereignisse aus $\Omega_1$ auf Ereignisse in $\Omega_2$ ab. Wenn ich mir ein Ereignis $S_2$ aus $\Sigma_2$ nehme, also eine Teilmenge von $\Omega_2$, müssen alle Ergebnisse aus $\Omega_1$, die durch die Funktion $f$ auf Ergebnisse von $S_2$ abgebildet werden, zusammen eine Teilmenge von $Omega_1$ und damit eine Element von $\Sigma_1$ sein. \\
+Das muss für alle $S \in  \Sigma_2$ gelten. Egal, welches Ereignis $S$ aus $\Sigma_2$ betrachtet wird, das Urbild von $S$ unter $f$ muss ein Element von $\Sigma_1$ sein.}
+
+
+
+
 
 
 %\section{Übergangskern}
 %Man hat zwei Messräume $(\Omega_0, \Sigma_0)$ und $(\Omega_1, \Sigma_1)$. Eine Abbildung $K: \Omega_0 \times \Sigma_1 \rightarrow [0, \infty)$ heißt Übergangskern von $(\Omega_0, \Sigma_0)$ nach $(\Omega_1, \Sigma_1)$, wenn gilt:
 
-$\bullet$ Für jedes $x \in \Omega_0$ ist $K(x,\ \cdot \ )$ ein Maß auf $(\Omega_1, \Sigma_1)$.
+%$\bullet$ Für jedes $x \in \Omega_0$ ist $K(x,\ \cdot \ )$ ein Maß auf $(\Omega_1, \Sigma_1)$.
 
-$\bullet$ Für jedes $S \in \Sigma_1$ ist $K(\ \cdot \ , S)$ eine $\Sigma_0$-messbare Abbildung.
+%$\bullet$ Für jedes $S \in \Sigma_1$ ist $K(\ \cdot \ , S)$ eine $\Sigma_0$-messbare Abbildung.
+
 
 
 \end{document}

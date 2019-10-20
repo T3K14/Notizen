@@ -1,7 +1,10 @@
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}$\sigma $-Algebra}{1}
-\contentsline {section}{\numberline {2}Wahrscheinlichkeitsma\IeC {\ss }}{1}
-\contentsline {paragraph}{\nonumberline Normiertheit:}{1}
-\contentsline {paragraph}{\nonumberline $\sigma $-Additivit\IeC {\"a}t:}{1}
-\contentsline {section}{\numberline {3}Wahrscheinlichkeitsraum}{1}
-\contentsline {section}{\numberline {4}Messraum}{2}
+\contentsline {section}{\numberline {1}Grundbegriffe}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Urbild}{1}{subsection.1.1}
+\contentsline {section}{\numberline {2}$\sigma $-Algebra}{1}{section.2}
+\contentsline {section}{\numberline {3}Wahrscheinlichkeitsma\IeC {\ss }}{2}{section.3}
+\contentsline {paragraph}{\nonumberline Normiertheit:}{2}{section*.3}
+\contentsline {paragraph}{\nonumberline $\sigma $-Additivit\IeC {\"a}t:}{2}{section*.4}
+\contentsline {section}{\numberline {4}Wahrscheinlichkeitsraum}{2}{section.4}
+\contentsline {section}{\numberline {5}Messraum}{2}{section.5}
+\contentsline {section}{\numberline {6}messbare Funktion}{2}{section.6}
