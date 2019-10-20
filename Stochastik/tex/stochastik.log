@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.16)  20 OCT 2019 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.16)  20 OCT 2019 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,7 +633,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
 Here is how much of TeX's memory you used:
  11071 strings out of 492995
  173120 string characters out of 6132703
- 359826 words of memory out of 5000000
+ 360826 words of memory out of 5000000
  14459 multiletter control sequences out of 15000+600000
  13714 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -655,7 +655,7 @@ ve/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive
 7/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on stochastik.pdf (5 pages, 250933 bytes).
+Output written on stochastik.pdf (5 pages, 250496 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  124 compressed objects within 2 object streams
