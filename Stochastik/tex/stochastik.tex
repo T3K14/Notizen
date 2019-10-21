@@ -16,6 +16,10 @@
 
 \usepackage{url}
 \usepackage{hyperref}
+
+\usepackage[a4paper, includehead, includefoot]{geometry}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
 %\usepackage{multibib}
 \bibliographystyle{unsrt}
 
@@ -118,10 +122,37 @@ f^{-1}(S_2) \in \Sigma_1.
 \textit{In eigenen Worten: Aus Wahrscheinlichkeitssicht: Die Funktion $f$ bildet Ereignisse aus $\Omega_1$ auf Ereignisse in $\Omega_2$ ab. Wenn ich mir ein Ereignis $S_2$ aus $\Sigma_2$ nehme, also eine Teilmenge von $\Omega_2$, müssen alle Ergebnisse aus $\Omega_1$, die durch die Funktion $f$ auf Ergebnisse von $S_2$ abgebildet werden, zusammen ein Element von $\Sigma_1$ sein. \\
 Das muss für alle $S \in  \Sigma_2$ gelten. Egal, welches Ereignis $S$ aus $\Sigma_2$ betrachtet wird, das Urbild von $S$ unter $f$ muss ein Element von $\Sigma_1$ sein. Zu jedem Element $S$ der $\sigma$"=Algebra $\Sigma_2$ muss es ein Element von $\Sigma_1$ geben, das das Urbild von $S$ unter $f$ ist.}
 
+\section{Zufallsvariable}
+\subsection{Definition}
+Eine Zufallsvariable (ZV) ist eine messbare Funktion von einem Wahrscheinlichkeitsraum in einen Messraum. Seien also $(\Omega, \Sigma , P)$ ein Wahrscheinlichkeitsraum und $(\Omega', \Sigma')$ ein Messraum. Eine $\Sigma$"=$\Sigma'$"=messbare Funktion $X:\Omega \rightarrow \Omega'$ heißt dann eine $\Omega'$"=Zufallsvariable auf $\Omega$.
 
+\paragraph{Beispiel:} Es soll das Experiment des zweimaligen Würfelns mit einem fairen Würfel betrachtet werden. Der dazugehörige Warscheinlichkeitsraum $(\Omega, \Sigma, P)$ sieht wie folgt aus:
 
+\begin{itemize}
+\item $\Omega = \{ (1,1), (1,2), \dots, (6,5), (6,6) \}$ ist die Ergebnismenge aller möglichen Ergebnisse
+\item $\Sigma = \mathcal{P}(\Omega)$ ist die Potenzmenge von $\Omega$
+\item $P$ ist das Wahrscheinlichkeitsmaß. Da die Würfe unabhängig sein sollen, sollen alle 36 möglichen Ergebnisse gleichwahrscheinlich sein. Daher gilt: $P(\{ n_1, n_2\}) = \frac{1}{36}$ für $n_1, n_2 \in \{ 1,2,3,4,5,6\}$
+\end{itemize}
 
+\noindent
+Es sollen nun zwei Zufallsvariablen definiert werden. Die ZV $X_1$ für das Würfelergebnis des ersten Würfels und eine andere $X_2$ für die Summe der beiden Augenzahlen.
 
+\begin{itemize}
+\item $X_1: \Omega \rightarrow \mathbb{R}; \qquad (n_1, n_2) \mapsto n_1$
+\item $X_2: \Omega \rightarrow \mathbb{R}; \qquad (n_1, n_2) \mapsto n_1 + n_2$
+\end{itemize}
+Dabei wurde für $\Sigma'$ die borelsche $\sigma$"=Algebra auf den reellen Zahlen gewählt.
+
+\subsection{Verteilung einer Zufallsvariablen}
+Sei $X$ wieder eine ZV von $(\Omega, \Sigma, P)$ in den Ereignisraum $(\Omega', \Sigma')$. Dann heißt die durch
+\begin{equation}
+P_X(A') := P(X^{-1}(A')) \qquad \text{für alle }A' \in \Sigma' 
+\end{equation}
+definierte Abbildung $P_X: \Sigma' \rightarrow [0, 1]$ die Verteilung der Zufallsvariablen $X$ unter $P$. Hierbei bezeichnet $X^{-1}(A')$ das Urbild von $A'$ unter $X$, also das Ereignis
+$\{ \omega \in \Omega \ | \ X(\omega) \in A' \} \in \Sigma$. \\
+
+\noindent
+\textit{In eigenen Worten: Die Wahrscheinlichkeit für ein Eregnis $S'$ aus $\Sigma'$ ist also die Wahrscheinlichkeit für das Ereignis $S = X^{-1}(S')$, das durch die ZV $X$ auf $S'$ abgebildet wird. Dazu braucht man auch die messbare Funktion $X$, da so die Urbilder für alle Ereignisse in $\Sigma'$ immer in $\Sigma$ liegen.}
 
 %\section{Übergangskern}
 %Man hat zwei Messräume $(\Omega_0, \Sigma_0)$ und $(\Omega_1, \Sigma_1)$. Eine Abbildung $K: \Omega_0 \times \Sigma_1 \rightarrow [0, \infty)$ heißt Übergangskern von $(\Omega_0, \Sigma_0)$ nach $(\Omega_1, \Sigma_1)$, wenn gilt:
