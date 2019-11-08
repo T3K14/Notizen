@@ -60,13 +60,44 @@ f^{-1}(\{b\}) := f^{-1}(b).
 \caption{Beispiel: Das Urbild von $M=\{0\} \subset B$ ist $\{2,3,5\} \subset A$.}
 \end{figure}
 
+\subsection{charakteristische Funktion}
+Gegeben sei eine bel. Grundmenge $X$ und eine Teilmenge davon $T \subset X$. Die Funktion $\chi_T: X \rightarrow \{0, 1\}$ definiert durch
+\begin{equation}
+\chi_T(x) = \begin{cases}
+      1, & \text{falls}\ x \in T \\
+      0, & \text{falls}\ x \not\in T \\
+    \end{cases}
+\end{equation}
+heißt charakteristische Funktion oder Indikatorfunktion der Menge $T$.
+
+\subsection{einfache Funktion}
+Sei $(X, \Sigma)$ ein Messraum und $V$ ein (reeller, oder komplexer) Banachraum. Eine Funktion $u: X \rightarrow V$ heißt einfache Funktion, wenn folgende Bedingungen erfüllt sind:
+\begin{itemize}
+\item $u$ nimmt nur endlich viele Werte $\{ v_1, v_2, \dots, v_n\}$ an 
+\item für alle $v \in V$ gilt $u^{-1}(\{v\}) \in \Sigma$, $u$ ist also messbar
+\end{itemize}
+Wenn auf $\Sigma$ noch ein Maß $\mu$ definiert ist, also ein Maßraum vorliegt, fordert man manchmal noch zusätzlich:
+\begin{itemize}
+\item $\mu(u^{-1}(V \setminus\{0\}))$ ist endlich
+\end{itemize}
+
+\noindent
+Die Forderungen sind äquivalent zu der Aussage, dass $u$ die folgende Darstellung besitzt:
+\begin{equation}
+u(x) = \sum^n_{i=1}v_i \cdot \chi_{E_i}(x),
+\end{equation}
+wobei die $v_i \in V$ und $\chi_{E_i}$ die charakteristische Funktion der messbaren Menge $u^{-1}(\{v_i\}) \in \Sigma$. \\
+
+\noindent
+\textit{In eigenen Worten: Egal welches Argument $x$ man der Fkt $u$ übergibt, es muss ein Wert aus der endlichen Menge rauskommen. Messbarkeit wird in Sek. \ref{sec:messbar} behandelt, wobei hier nur gefordert wird, dass die Urbilder der Einelementmengen in $\Sigma$ liegen. Allgemein sollte das Kriterium für beliebige Teilmengen von $V$ gelten. In der letzen Forderung sieht es doch so aus, als wäre allgemeine Messbarkeit gefordert, da das Urbild einer mehr als ein Elemten großen Teilmenge von $V$ vom Maß angenommen werden und daher in $\Sigma$ liegen muss. Die letzte Forderung sagt aus, dass das Maß vom Urbild des Raumes ohne Null endlich sein soll. Also das Maß von der Teilmenge aller Elemente aus $X$, die durch $u$ auf $V \setminus \{ 0\}$ abgebildet werden, soll endlich sein. Mal sehen wofür man das fordert. Zu der äquivalenten Formulierung: Die charakteristische Funktion ist 1, wenn das x in der Teilmenge von $X$ liegt, welche durch $u$ auf $v_i$ abgebildet wird. Zur Summe trägt nur das $v_i$ bei, dessen Urbild unter $u$ das Argument $x$ enthält. Die Funktion nimmt damit nur Werte asu $V$ an, da die charakteristische Funktion nur einmal anschlägt und zwar genau dann, wenn das x im Urbild von einem bestimmten $v_i$ liegt. Da die Funktion eindeutig zuweist, liegt aber jedes x nur in einem Urbild und daher ist die charakteristische Funktion nur dann 1, wenn Urbild von einem best. $v_i$ und x zusammenpassen.}
+
 \section{$\sigma$-Algebra}
 Sei $\Omega$ eine nichtleere Menge und $\mathcal{P}(\Omega)$ die Potenzmenge dieser Menge. Eine Menge von Teilmengen $\mathcal{A} \subset \mathcal{P}(\Omega)$ (auch Mengensystem genannt) heißt $\sigma$-Algebra auf, oder über $\Omega$, wenn sie die folgenden drei Bedingungen erfüllt:
 
 \begin{enumerate}
 	\item $\mathcal{A}$ enthält die Grundmenge, also: $\Omega \in \mathcal{A}$
 	\item $\mathcal{A}$ ist stabil bezüglich der Komplementbildung. Ist also $A \in \mathcal{A}$, dann ist auch $A^{\mathrm{C}} \in \mathcal{A}$.
-	\item $\mathcal{A}$ ist stabil bezüglich abzählbarer Vereinigungen. Sind also die Mengen $A_1, A_2, A_3, \dots$ in $\mathcal{A}$ enthalten, so ist auch $\bigcup_{i=1}^\infty$ in $\mathcal{A}$ enthalten.
+	\item $\mathcal{A}$ ist stabil bezüglich abzählbarer Vereinigungen. Sind also die Mengen $A_1, A_2, A_3, \dots$ in $\mathcal{A}$ enthalten, so ist auch $\bigcup^\infty_{i=1}$ in $\mathcal{A}$ enthalten.
 \end{enumerate}
 
 \section{Wahrscheinlichkeitsmaß}
@@ -112,7 +143,7 @@ In der Stochastik wird der Messraum auch Ereignisraum genannt und ist einfach ei
 \noindent
 Eine Menge $S$ wird messbare Menge genannt, wenn $S \in \Sigma$ gilt.
 
-\section{messbare Funktion}
+\section{messbare Funktion} \label{sec:messbar}
 Seien $(\Omega_1, \Sigma_1)$ und $(\Omega_2, \Sigma_2)$ zwei Messräume. Eine Funktion $f: \Omega_1 \rightarrow \Omega_2$ wird $\Sigma_1$"=$\Sigma_2$"=messbar genannt, wenn für alle $S_2 \in \Sigma_2$ gilt, dass das Urbild von $S_2$ unter $f$ ein Element aus $\Sigma_1$ ist:
 \begin{equation}
 f^{-1}(S_2) \in \Sigma_1.
