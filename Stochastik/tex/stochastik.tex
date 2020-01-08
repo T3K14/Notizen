@@ -89,7 +89,7 @@ u(x) = \sum^n_{i=1}v_i \cdot \chi_{E_i}(x),
 wobei die $v_i \in V$ und $\chi_{E_i}$ die charakteristische Funktion der messbaren Menge $u^{-1}(\{v_i\}) \in \Sigma$. \\
 
 \noindent
-\textit{In eigenen Worten: Egal welches Argument $x$ man der Fkt $u$ übergibt, es muss ein Wert aus der endlichen Menge rauskommen. Messbarkeit wird in Sek. \ref{sec:messbar} behandelt, wobei hier nur gefordert wird, dass die Urbilder der Einelementmengen in $\Sigma$ liegen. Allgemein sollte das Kriterium für beliebige Teilmengen von $V$ gelten. In der letzen Forderung sieht es doch so aus, als wäre allgemeine Messbarkeit gefordert, da das Urbild einer mehr als ein Elemten großen Teilmenge von $V$ vom Maß angenommen werden und daher in $\Sigma$ liegen muss. Die letzte Forderung sagt aus, dass das Maß vom Urbild des Raumes ohne Null endlich sein soll. Also das Maß von der Teilmenge aller Elemente aus $X$, die durch $u$ auf $V \setminus \{ 0\}$ abgebildet werden, soll endlich sein. Mal sehen wofür man das fordert. Zu der äquivalenten Formulierung: Die charakteristische Funktion ist 1, wenn das x in der Teilmenge von $X$ liegt, welche durch $u$ auf $v_i$ abgebildet wird. Zur Summe trägt nur das $v_i$ bei, dessen Urbild unter $u$ das Argument $x$ enthält. Die Funktion nimmt damit nur Werte asu $V$ an, da die charakteristische Funktion nur einmal anschlägt und zwar genau dann, wenn das x im Urbild von einem bestimmten $v_i$ liegt. Da die Funktion eindeutig zuweist, liegt aber jedes x nur in einem Urbild und daher ist die charakteristische Funktion nur dann 1, wenn Urbild von einem best. $v_i$ und x zusammenpassen.}
+\textit{In eigenen Worten: Egal welches Argument $x$ man der Fkt $u$ übergibt, es muss ein Wert aus der endlichen Menge raus kommen. Messbarkeit wird in Sek. \ref{sec:messbar} behandelt, wobei hier nur gefordert wird, dass die Urbilder der Einelementmengen in $\Sigma$ liegen. Allgemein sollte das Kriterium für beliebige Teilmengen von $V$ gelten. In der letzten Forderung sieht es doch so aus, als wäre allgemeine Messbarkeit gefordert, da das Urbild einer mehr als ein Element großen Teilmenge von $V$ vom Maß angenommen werden und daher in $\Sigma$ liegen muss. Die letzte Forderung sagt aus, dass das Maß vom Urbild des Raumes ohne Null endlich sein soll. Also das Maß von der Teilmenge aller Elemente aus $X$, die durch $u$ auf $V \setminus \{ 0\}$ abgebildet werden, soll endlich sein. Mal sehen wofür man das fordert. Zu der äquivalenten Formulierung: Die charakteristische Funktion ist 1, wenn das x in der Teilmenge von $X$ liegt, welche durch $u$ auf $v_i$ abgebildet wird. Zur Summe trägt nur das $v_i$ bei, dessen Urbild unter $u$ das Argument $x$ enthält. Die Funktion nimmt damit nur Werte asu $V$ an, da die charakteristische Funktion nur einmal anschlägt und zwar genau dann, wenn das x im Urbild von einem bestimmten $v_i$ liegt. Da die Funktion eindeutig zuweist, liegt aber jedes x nur in einem Urbild und daher ist die charakteristische Funktion nur dann 1, wenn Urbild von einem best. $v_i$ und x zusammenpassen.}
 
 
 
@@ -110,7 +110,7 @@ Dann heißt eine Abbildung
 \begin{equation}
 P: \Sigma \rightarrow [0,1]
 \end{equation}
-Wahrscheinlichkeitsmaß, wenn sie die folgenden Bedinungen erfüllt.
+Wahrscheinlichkeitsmaß, wenn sie die folgenden Bedingungen erfüllt.
 
 \paragraph{Normiertheit:}
 \begin{equation}
@@ -159,12 +159,12 @@ Das muss für alle $S \in  \Sigma_2$ gelten. Egal, welches Ereignis $S$ aus $\Si
 \subsection{Definition}
 Eine Zufallsvariable (ZV) ist eine messbare Funktion von einem Wahrscheinlichkeitsraum in einen Messraum. Seien also $(\Omega, \Sigma , P)$ ein Wahrscheinlichkeitsraum und $(\Omega', \Sigma')$ ein Messraum. Eine $\Sigma$"=$\Sigma'$"=messbare Funktion $X:\Omega \rightarrow \Omega'$ heißt dann eine $\Omega'$"=Zufallsvariable auf $\Omega$.
 
-\paragraph{Beispiel:} Es soll das Experiment des zweimaligen Würfelns mit einem fairen Würfel betrachtet werden. Der dazugehörige Warscheinlichkeitsraum $(\Omega, \Sigma, P)$ sieht wie folgt aus:
+\paragraph{Beispiel:} Es soll das Experiment des zweimaligen Würfelns mit einem fairen Würfel betrachtet werden. Der dazugehörige Wahrscheinlichkeitsraum $(\Omega, \Sigma, P)$ sieht wie folgt aus:
 
 \begin{itemize}
 \item $\Omega = \{ (1,1), (1,2), \dots, (6,5), (6,6) \}$ ist die Ergebnismenge aller möglichen Ergebnisse
 \item $\Sigma = \mathcal{P}(\Omega)$ ist die Potenzmenge von $\Omega$
-\item $P$ ist das Wahrscheinlichkeitsmaß. Da die Würfe unabhängig sein sollen, sollen alle 36 möglichen Ergebnisse gleichwahrscheinlich sein. Daher gilt: $P(\{ n_1, n_2\}) = \frac{1}{36}$ für $n_1, n_2 \in \{ 1,2,3,4,5,6\}$
+\item $P$ ist das Wahrscheinlichkeitsmaß. Da die Würfe unabhängig sein sollen, sollen alle 36 möglichen Ergebnisse gleich wahrscheinlich sein. Daher gilt: $P(\{ n_1, n_2\}) = \frac{1}{36}$ für $n_1, n_2 \in \{ 1,2,3,4,5,6\}$
 \end{itemize}
 
 \noindent
@@ -185,7 +185,7 @@ definierte Abbildung $P_X: \Sigma' \rightarrow [0, 1]$ die Verteilung der Zufall
 $\{ \omega \in \Omega \ | \ X(\omega) \in A' \} \in \Sigma$. \\
 
 \noindent
-\textit{In eigenen Worten: Die Wahrscheinlichkeit für ein Eregnis $S'$ aus $\Sigma'$ ist also die Wahrscheinlichkeit für das Ereignis $S = X^{-1}(S')$, das durch die ZV $X$ auf $S'$ abgebildet wird. Dazu braucht man auch die messbare Funktion $X$, da so die Urbilder für alle Ereignisse in $\Sigma'$ immer in $\Sigma$ liegen.}
+\textit{In eigenen Worten: Die Wahrscheinlichkeit für ein Ereignis $S'$ aus $\Sigma'$ ist also die Wahrscheinlichkeit für das Ereignis $S = X^{-1}(S')$, das durch die ZV $X$ auf $S'$ abgebildet wird. Dazu braucht man auch die messbare Funktion $X$, da so die Urbilder für alle Ereignisse in $\Sigma'$ immer in $\Sigma$ liegen.}
 
 %\section{Übergangskern}
 %Man hat zwei Messräume $(\Omega_0, \Sigma_0)$ und $(\Omega_1, \Sigma_1)$. Eine Abbildung $K: \Omega_0 \times \Sigma_1 \rightarrow [0, \infty)$ heißt Übergangskern von $(\Omega_0, \Sigma_0)$ nach $(\Omega_1, \Sigma_1)$, wenn gilt:
