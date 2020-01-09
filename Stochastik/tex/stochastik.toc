@@ -14,3 +14,9 @@
 \contentsline {subsection}{\numberline {7.1}Definition}{3}{subsection.7.1}%
 \contentsline {paragraph}{\nonumberline Beispiel:}{3}{section*.5}%
 \contentsline {subsection}{\numberline {7.2}Verteilung einer Zufallsvariablen}{4}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Verteilungsfunktion}{4}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Wahrscheinlichkeitsma\IeC {\ss }}{4}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Zufallsvariable}{4}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Verallgemeinerte inverse Verteilungsfunktion / Quantilfunktion}{4}{section.9}%
+\contentsline {section}{\numberline {10}Quantil}{5}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Definition via Verteilungsfunktion}{5}{subsection.10.1}%
