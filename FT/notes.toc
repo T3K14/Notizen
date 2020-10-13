@@ -1,0 +1,25 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Sweep-Rotorblatt}{1}{section.1}%
+\contentsline {paragraph}{\nonumberline Gesamtfit}{1}{section*.2}%
+\contentsline {subsection}{\numberline {1.1}Plots}{1}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}bsp\_input\_output}{1}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}bode\_ersten\_zwei\_x bzw z}{1}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Feedthroug}{1}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Fit\_x bzw z}{1}{subsubsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.5}sd\_long\_x oder z}{1}{subsubsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.2}Die Eigenfrequenzen}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}23.09.}{2}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}fig sd\_2komma5Hz\_x}{2}{subsubsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.4}24.09}{2}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}input\_output\_2komma5Hz\_erster\_Sensor}{2}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}bode\_ersten\_zwei\_x\_2komma5}{2}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}uebrige genauere Versuche}{2}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}mal10}{2}{subsubsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.5}26.09}{3}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}X Moden auch visualisieren}{3}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}ANMERKUNG!!!}{3}{subsubsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.3}Sweep Balken}{3}{subsubsection.1.5.3}%
+\contentsline {subsubsection}{\numberline {1.5.4}sweep\_test punkt m und sweep\_test2 punkt m}{3}{subsubsection.1.5.4}%
+\contentsline {subsubsection}{\numberline {1.5.5}input\_output\_erster}{3}{subsubsection.1.5.5}%
+\contentsline {subsubsection}{\numberline {1.5.6}bode1267}{3}{subsubsection.1.5.6}%
+\contentsline {section}{\numberline {2}Notes f\IeC {\"u}r Protokoll}{3}{section.2}%

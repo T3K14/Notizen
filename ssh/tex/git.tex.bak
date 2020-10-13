@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\title{ssh}
+%\author{Author's Name}
+
+\section*{bisheriges Wissen}
+Die Keys befinden sich im users/robert/.ssh Ordner. Ein passphrase ist nötig.
+
+\section*{ssh-agent}
+Scheinbar muss dieses Programm aktiviert sein. Ich starte es in der git-bash mit \texttt{eval \$(ssh-agent -s)}, alternativ könnte man auch die bashrc so umschreiben, dass das Programm jedes mal beim launch der shell mitgelauncht wird, habe ich aber jetzt nicht gemacht.
+
+Der ssh-agent läuft beyond the duration of a local login session und kommuniziert mit ssh clients.
+
+\section*{Github}
+Auf Github habe ich jetzt den neuen ssh-key angegeben und konnte jetzt das repo Notizen auch erfolgreich clonen.
+
+\end{document}
