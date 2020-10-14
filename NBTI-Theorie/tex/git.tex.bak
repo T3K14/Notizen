@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{left=2cm, right=2cm, top=3cm, bottom=3cm}
+
+\begin{document}
+
+\title{NBTI-Theorie}
+%\author{Author's Name}
+
+\section{Erklärungen}
+\subsection{Bias}
+\textit{Bisher habe ich das so verstanden, dass das einfach die Spannung ist, die zwischen Source und Gate angelegt ist.} \\
+
+\noindent
+In einem Paper über NBTI (Statistical Model for MOSFET Bias TemperatureInstability Component Due to Charge Trapping von G. Wirth) steht, dass bei konst. Bias nur states (traps) nahe des Fermilevels eine starke Aktivität aufweisen, also ihren Zustand zwischen besetzt und leer wechseln. Das kann man als steady state condition interpretieren -> occupation probability of a trap is time independent -> Anzahl an Traps die als besetzt erwartet werden ist konstant. Falls der bias point sich abrupt ändert, ändert sich auch die Besetzungswahrscheinlichkeit abrupt.
+\textit{Intuitiv kann ich das nicht einordnen.}
+
+\subsection{threshold voltage}
+Das ist die minimale Gate-Source Spannung, die angelegt sein muss, damit eine leitende Brücke zwischen source und drain entsteht.
+
+
+\end{document}
