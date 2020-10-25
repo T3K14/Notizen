@@ -55,11 +55,15 @@ Es gilt also:
 $|B \setminus A|$ darf höchstens halb so klein sein, wie $|A \setminus B|$.\\
 \textit{In wie fern liefern die Aussagen Hinweise zu den Größen der Mengen? Nach der zweiten Aussage gibt es zu jeder Kante in $A \setminus B$ mindestens eine Nachbarkante in $B\setminus A$, jedoch können da Kanten auch mehrfach als angrenzende Kanten benutzt werden. Jedoch nach der ersten Aussage jede maximal doppelt.\\
 Wenn das Gleichzeichen gilt, wird jeder Kante in $A\setminus B$ eine Kante in $B\setminus A$ zugeordnet, die noch zu genau einer anderen Kante benachbart ist. Da jede Kante benachbart mit mindestens einer ist, $B \setminus A$ aber mindestens halb so groß sein muss, damit alle benachbart mit einer Kante aus der zweiten Menge sein können, ist das der worst case und ansonsten ist $B \setminus A$ mehr als halb so groß. Wenn $B\setminus A$ kleiner als halb so groß wie die linke Menge wäre, könnte nicht mehr jeder Kante eine andere als Nachbar zugeordnet werden, da jeder eine zugeordnet werden muss, aber für jeweils höchstens zwei Kanten nur ein Nachbar gemeinsam sein darf.}\\\\
-Jetzt da das geklärt ist, kann man schnell rechnen:
+Jetzt da das geklärt ist, kann man schnell schreiben:
+\begin{align*}
+|A| = |(A \cap B) \cup (A\setminus B)| = |A \cap B| + |A\setminus B| \le 2\cdot |A \cap B| + 2 \cdot |B\setminus A| = 2 \cdot |(A \cap B) \cup (B \setminus A)| = 2\cdot |B|,
+\end{align*}
+also
 \begin{align}
-|A| = |(A \cap B) \cup (A\setminus B)| = |A \cap B| + |A\setminus B| \le
+|A| \le 2 \cdot |B|
 \end{align}
-
+und da die Bezeichnungen $A$ und $B$ von Anfang an willkürlich gewählt waren, gilt das genauso auch anders herum.
 
 
 
