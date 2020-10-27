@@ -31,7 +31,7 @@
 \end{align}
 Er sagt aus, auf wie viele verschiedene Weisen man $k$ unterscheidbare Objekte aus $n$ ohne Zurücklegen ziehen kann (Anzahl der Kombinationen ohne Wiederholung).
 \subsection*{Herleitung}
-Wenn man sich zunächst überlegt, wie viele $k$-Tupel man aus $n$ Objekten ziehen kann, dann hat man für das erste $n$ Möglichkeiten, für das zweite $n-1$ und so weiter, bis $n-k+1$. Das zusammengefasst ist $\frac{n!}{(n-k)!}$. Für jedes dieser $k$-Tupel gibt es jetzt selbst wieder $k!$ unterschiedliche Anordnungsmöglichkeiten, da es hier nur um die Menge und nicht um die Reihenfolge geht.
+Wenn man sich zunächst überlegt, wie viele $k$-Tupel man aus $n$ Objekten ziehen kann, dann hat man für das erste $n$ Möglichkeiten, für das zweite $n-1$ und so weiter, bis $n-k+1$. Das zusammengefasst ist $\frac{n!}{(n-k)!}$. Für jedes dieser $k$-Tupel gibt es jetzt selbst wieder $k!$ unterschiedliche Anordnungsmöglichkeiten, da es hier nur um die Menge und nicht um die Reihenfolge geht. Man hat also k! mal weniger Möglichkeiten und teilt daher noch durch $k!$
 
 \subsection*{Beispiel}
 Wie viele Möglichkeiten gibt es, 6 Zahlen aus 49 auszuwählen? Es sind $\binom{49}{6} = 13.983.816$.

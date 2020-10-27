@@ -47,6 +47,7 @@ Seien $A$ und $B$ zwei maximale matchings.
 
 \item Jede Kante in $A \setminus B$ grenzt an (mindestens?) eine Kante in $B \setminus A$, weil $B$ nicht erweiterbar ist.\\
 \textit{Eine Kante, die in $A \setminus B$ vorkommt, hat wieder zwei Knoten $v, w$. Es kann nicht sein, dass keiner von den beiden Knoten in einer Kante in $B$ vorkommt, weil sonst könnte man $B$ um die Kante $\{v, w\}$ erweitern, was aber per Definition nicht möglich ist. Also werden entweder beide oder nur einer in Kanten von $B$ berücksichtigt. So oder so ist mindestens ein Knoten in einer Kante in $B$ drin und damit benachbart zur Anfangskante aus $A \setminus B$. Jetzt noch die Frage, warum in $B\setminus A$: Die Kanten, die jetzt $v$, $w$ oder beide berücksichtigen können gar nicht Teil von $A$ sein, da ja jeder Knoten nur einmal im Matching auftauchen darf.}
+\end{itemize}
 
 Es gilt also: 
 \begin{align}
@@ -70,6 +71,20 @@ und da die Bezeichnungen $A$ und $B$ von Anfang an willkürlich gewählt waren, 
 %\textit{Jede Kante in $A \setminus B$ grenzt nach meinem Verständnis an mind. eine Kante in $B\setminus A$. Das bedeutet, dass die Menge $B \setminus A$ mindestens genauso groß sein muss, wie $A\setminus B$, also $|A\setminus B| \le |B\setminus A|$ }
 
 %\textit{Aus der ersten Aussage würde ich ableiten, dass $|B\setminus A| \le 2 \cdot |A\setminus B|$. Da kann man dann auch einfach die Buchstaben vertauschen, aber wozu brauche ich die zweite Aussage?}
+
+\section{Knotenüberdeckungsproblem}
+Dieses Problem fragt danach, ob es zu einem geg. einfachen Graphen $G$ und einer Zahl $k$ ein Vertexcover von $G$ der Größe höchstens $k$ gibt. Also ob es eine $k$-elementige Teilmenge $K \subset V$ gibt, sodass jede Kante des Graphen inzident zu mindestens einem Knoten $v \in K$ ist.
+
+\section{Bipartiter Graph}
+Ein einfacher Graph $G=(V,E)$ heißt bipartit, falls sich seine Knoten in zwei disjunkte Teilmengen $U$ und $W$ aufteilen lassen, sodass zwischen den Knoten innerhalb beider Teilmengen keine Kanten verlaufen. Die Mengen $U$ und $W$ bezeichnet man dann als Partitionsklassen (englisch parts). Man schreibt dann oft $G = (U, V, E)$ um einen bipartiten Graphen zu beschreiben, dessen Partition die parts $U$ und $V$ hat.
+Ein Graph heißt vollständig bipartit, falls eine Bipartion $\{ U, V\}$ existiert, sodass jeder Knoten aus $U$ mit jedem Knoten in $V$ verbunden ist.
+
+\subsection{Matching}
+Beim Matching bei bipartiten Graphen geht es darum, Kanten zwischen den parts zu matchen. \textit{Es geht ja auch nur so, da es zwischen Knoten eines parts ja gar keine Kanten gibt.}
+
+\begin{itemize}
+\item Die Größe einer minimalen Knotenüberdeckung und eines maximum Matching stimmen auf bipartiten Graphen überein. \textit{Noch keine Gedanken zu gemacht.}
+
 
 \end{itemize}
 

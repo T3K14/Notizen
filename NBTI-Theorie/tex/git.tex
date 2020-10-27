@@ -1,14 +1,48 @@
-\documentclass{article}
-\usepackage{graphicx}
-\usepackage[utf8]{inputenc}
+\documentclass[paper=a4,10pt]{scrartcl}
 
-\usepackage{geometry}
-\geometry{left=2cm, right=2cm, top=3cm, bottom=3cm}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+\usepackage{fancyref}
+
+\usepackage[numbers,square,sort]{natbib} %praktikumsquellenvorgabe
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage{bm}
+
+\usepackage[a4paper, includehead, includefoot]{geometry}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
 
 \begin{document}
 
 \title{NBTI-Theorie}
 %\author{Author's Name}
+
+\section{Grundlagen}
+\subsection{Basic Band Theory}
+Fangen an mit freiem Elektronengasmodel mit nur einem Elektron in einem Potentialtopf der breite $L$, welcher den Kristall darstellen soll. In diesem Fall kann anscheinend die Energie des Elektrons nur vollständig in kinetischer Form vorliegen. Jetzt wird die zeitunabhängige Schrödingergleichung  mit Potential gleich 0 und periodischen Randbedingungen gelöst zu:
+\begin{align}
+\psi = \left( \frac{1}{L}	\right)^{3/2} \cdot e^{i  \bm k \bm r}
+\end{align}
+mit $k_x = \pm n_x \cdot 2\pi / L$ mit der Quantenzahl $n_x=0,1,2,\dots$ und genauso für die anderen beiden Komponenten von $\bm k$.\\
+Für die Geschwindigkeit des Elektrons erhält man 
+\begin{align}
+\bm v = \frac{\bm p}{m_e} = \frac{\hbar \cdot \bm k}{m_e}.
+\end{align}
+Da die total Energy hier identisch mit $E_{\text{kin}}$ ist, gilt
+\begin{align}
+E = \frac{m_e v^2}{2} = \frac{\hbar^2 \bm k^2}{2m_e} = \frac{\hbar^2}{2m_e} \left( \frac{2\pi}{L} \right)^2 (n_x^2 +n_y^2 + n_z^2)
+\end{align}
+
 
 \section{Erklärungen}
 \subsection{Bias}
