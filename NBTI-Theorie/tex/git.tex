@@ -42,6 +42,23 @@ Da die total Energy hier identisch mit $E_{\text{kin}}$ ist, gilt
 \begin{align}
 E = \frac{m_e v^2}{2} = \frac{\hbar^2 \bm k^2}{2m_e} = \frac{\hbar^2}{2m_e} \left( \frac{2\pi}{L} \right)^2 (n_x^2 +n_y^2 + n_z^2)
 \end{align}
+Das ist eine Dispersionsrelation, weil $E$ durch $\bm k$ ausgedrückt wird.
+Diese ganze Herleitung ist dazu da gewesen, um zu zeigen, dass die Energiewerte nur diskret sein können. Dieses Ergebnis ist auch dann noch gültig, wenn man mit den korrekten Potentialen rechnet und mehrere Elektronen betrachtet. Der Zusammenhang zwischen $E$ und $\bm k$ wird dann jedoch deutlich komplexer.\\
+Jetzt wo die Energielevel bekannt sind, kann man zählen, wie viele Energielevel es in einem Energieintervall $\Delta E$ bei der Energie $E$ gibt. Das macht man im $k$-Raum, im phase space.
+
+Im phase space ist eine Fläche konstanter Ebene eine Sphäre, da alle Punkte, deren $\bm k$ die selbe Länge haben auch den selben Energiewert besitzen.
+Jeder Zustand (jede Lsg. der Schrödingergleichung) mit einem bestimmten $\bm k$ nimmt ein Volumen ein (kleine Würfel).
+Die Anzahl of cubes die in die Sphäre zur Energie $E$ passen ist die Zahl aller Energiezustände bis zu $E$.
+
+Jetzt wollen wir die density of states $D(E)$ ermitteln.
+
+Ein einzelner Zustand nimmt im $\bm k$-Raum ein Volumen von $(2\pi)^3/V$ mit $V=L_xL_yL_z$ und mit dem Faktor 2 für die Spinentartung hat man einen Zustand pro diesem Volumen -> $Z(\bm k) = 2 \cdot V/(2\pi)^3$. 
+
+Die Zustandsdichte im Energieraum erhält man mit der Dispersionsrelation von oben und der Beziehung
+\begin{align}
+Z(\bm k) d^3k = D(E)dE.
+\end{align} 
+\textit{Wo kommt das her?}
 
 
 \section{Erklärungen}
