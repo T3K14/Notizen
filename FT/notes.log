@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.8)  14 OCT 2020 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.8)  3 NOV 2020 14:15
 entering extended mode
 **./notes.tex
 (notes.tex
@@ -675,50 +675,104 @@ een already used, duplicate ignored
                    \relax 
 l.36 \newpage
               [2]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 4
+2.
+
+("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+
 ("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<./bilder/sinus_plus_sinus.png, id=19, 173.448pt x 173.448pt>
+<./bilder/sinus_plus_sinus.png, id=39, 173.448pt x 173.448pt>
 File: ./bilder/sinus_plus_sinus.png Graphic file (type png)
 <use ./bilder/sinus_plus_sinus.png>
-Package pdftex.def Info: ./bilder/sinus_plus_sinus.png  used on input line 51.
+Package pdftex.def Info: ./bilder/sinus_plus_sinus.png  used on input line 63.
 (pdftex.def)             Requested size: 193.47578pt x 193.48497pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
 
-[1 <./bilder/sinus_plus_sinus.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+[1 <./bilder/sinus_plus_sinus.png>] [2]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 112.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+14.
+("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<./bilder/td-7000pt-7000fft.jpg, id=69, 562.1pt x 421.575pt>
+File: ./bilder/td-7000pt-7000fft.jpg Graphic file (type jpg)
+<use ./bilder/td-7000pt-7000fft.jpg>
+Package pdftex.def Info: ./bilder/td-7000pt-7000fft.jpg  used on input line 140
+.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+[3]
+<./bilder/fd-7000pt-7000fft.jpg, id=82, 562.1pt x 421.575pt>
+File: ./bilder/fd-7000pt-7000fft.jpg Graphic file (type jpg)
+<use ./bilder/fd-7000pt-7000fft.jpg>
+Package pdftex.def Info: ./bilder/fd-7000pt-7000fft.jpg  used on input line 148
+.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+ [4 <./bilder/td-7000pt-7000fft.jpg> <./bilder/fd-7000pt-7000fft.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
+
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 12869 strings out of 492445
- 214361 string characters out of 3119821
- 434127 words of memory out of 3000000
- 17008 multiletter control sequences out of 15000+200000
- 11481 words of font info for 34 fonts, out of 3000000 for 9000
+ 13009 strings out of 492445
+ 216971 string characters out of 3119821
+ 439127 words of memory out of 3000000
+ 17101 multiletter control sequences out of 15000+200000
+ 20804 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,10n,61p,10102b,485s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,11n,61p,10102b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm
 -super-t1.enc}<C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rober/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/rober/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/rober
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
-Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm
--super/sfrm1000.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/cm-super/sfrm1440.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/cm-super/sfsx1000.pfb><C:/Users/rober/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1440.pfb><C:/Users/rober/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on notes.pdf (3 pages, 172523 bytes).
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/rober/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/robe
+r/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
+:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr7.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/rober/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0500.pfb><C:/Users/rober/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users
+/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.p
+fb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-supe
+r/sfrm1440.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/cm-super/sfsx1000.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/cm-super/sfsx1200.pfb><C:/Users/rober/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/cm-super/sfsx1440.pfb><C:/Users/rober/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx2074.pfb><C:/Users/rober/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti0500.pfb><C:/
+Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1
+000.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm
+-super/sftt1000.pfb>
+Output written on notes.pdf (7 pages, 441924 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 14 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
