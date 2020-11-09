@@ -88,5 +88,27 @@ Beim Matching bei bipartiten Graphen geht es darum, Kanten zwischen den parts zu
 
 \end{itemize}
 
+\section{Factor-Graph}
+Ein Factor-Graph ist ein bipartiter Graph der die Faktorisierung einer Funktion darstellt. Sei eine Faktorisierung der Funktion $g(X_1, X_2, \dots X_n)$ gegeben:
+\begin{align}
+g(X_1, X_2, \dots X_n) = \prod_{j=1}^m f_j(S_j)
+\end{align}
+mit $S_j \subseteq \{X_1,X_2, \dots, X_n\}$
+\textit{Das heißt, dass sich die Funktion $g$ darstellen lässt als Produkt von $m$ Funktionen von Teilmengen der ursprünglichen Parametermenge. Beispielsweise eine Funktion $g(X_1, X_2, X_3) = f_1(X_1)f_2(X_1, X_2)f_3(X_1, X_2)f_4(X_2, X_3)$.}\\
+Der zu einer Faktorisierung gehörende Factor-Graph $G(X,F,E)$ besteht aus Variablenknoten $X=\{X_1, X_2, \dots, X_n\}$, Factor vertices $F=\{f_1, f_2, \dots, f_m\}$ und wie ein normaler Graph gibt es noch die Kanten $E$, wobei die Kanten in Abhängigkeit der Faktorisierung vorliegen: Es existiert eine ungerichtete Kante zwischen einem Variablenknoten $X_k$ und dem factor Knoten $f_j$genau dann, wenn (iff) $X_k \in S_j$. Es wird dabei laut Wiki angenommen, dass die Funktion $g(X_1, \dots, X_n) \in \mathbb{R}$ gilt.
+
+\subsection{Beispiel}
+Angenommen wir haben wieder die Beispielfaktorisierung $g(X_1, X_2, X_3) = f_1(X_1)f_2(X_1, X_2)f_3(X_1, X_2)f_4(X_2, X_3)$, dann ist dazu in Abb. \ref{fig:factorgraph} ein korrespondierender Factor-Graph dargestellt. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{../bilder/Factorgraph.jpg}
+\caption{Beispielfactorgraph}
+\label{fig:factorgraph}
+\end{figure}
+Jede Factornode ist mit den zugehörigen Variablenodes verbunden. Man kann noch erkennen, dass es im Graphen einen Zyklus gibt. Das liegt daran, dass sowohl $f_2$, also auch $f_3$ die Argumente $X_1, X_2$ haben. Da sich beide Faktoren sozusagen aus den selben Argumenten zusammensetzen lassen, kann man diese beiden Faktoren auch zu einem zusammenfassen und der Graph wird zu einem Baum. Das ist relevant, da message passing algorithmen exakt auf Trees funktionieren, während sie für Graphen mit Zyklen nur Approximationen liefern. 
+
+\subsection{Graphen zu Faktorgraphen}
+In einem Bsp-paper wird zu einem normalen ungerichteten Graphen ein Factorgraph assoziiert, indem für jeden Knoten ein factor-Knoten gesetzt wird und in jede Kante ein Variableknoten, welcher dann mit zwei Kanten zwischen den factor-Knoten wieder verbunden wird. 
 
 \end{document}
