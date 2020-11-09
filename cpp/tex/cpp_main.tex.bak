@@ -1,0 +1,44 @@
+\documentclass[paper=a4,10pt]{scrartcl}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+\usepackage{fancyref}
+
+\usepackage[numbers,square,sort]{natbib} %praktikumsquellenvorgabe
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage[a4paper, includehead, includefoot]{geometry}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+\begin{document}
+
+\title{Cpp}
+%\author{Author's Name}
+Diese Notizen basieren auf der Youtube-Reihe Cpp von $\{$ bis $\}$ von Bytes'n'Objects. 
+
+
+\section{Initialisierungslisten}
+In der Initialisierungsliste sollte man für die Initialisierung von Feldern einer Klasse keine anderen Felder der selben Klasse verwenden, sondern Konstruktorparameter oder Konstanten (Es sei denn man ist sich 100 prozentig sicher). Begründung ist, dass die Felder nicht entsprechend der Reihenfolge in der Liste initialisiert werden, sondern entsprechend der Deklaration in der Klasse.
+
+\section{Rule of three}
+Die drei sind: copy constructor, destructor und copy assignment operator. Und die Regel besagt, dass wenn ich einen von den drein in einer Klasse implementiere, sollte ich voraussichtlich auch die übrigen zwei mit implementieren.
+
+\section{Pointer}
+Man sollte statt nackten Pointern eigentlich nur shared-pointer verwenden.
+
+\section{aquisition is initialization}
+
+
+
+\section{Fragen}
+\end{document}
