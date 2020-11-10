@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.8)  9 NOV 2020 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.8)  10 NOV 2020 12:03
 entering extended mode
 **./altarelli_zsm.tex
 (altarelli_zsm.tex
@@ -691,22 +691,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [1
 
 {C:/Users/rober/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
 
 (altarelli_zsm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `altarelli_zsm.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 13002 strings out of 492445
- 216158 string characters out of 3119821
+ 13004 strings out of 492445
+ 216177 string characters out of 3119821
  440503 words of memory out of 3000000
- 17110 multiletter control sequences out of 15000+200000
+ 17111 multiletter control sequences out of 15000+200000
  20022 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,9n,61p,10110b,485s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -730,9 +730,9 @@ m-super/sfrm1000.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/cm-super/sfsx1200.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/cm-super/sfsx1440.pfb><C:/Users/rober/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on altarelli_zsm.pdf (2 pages, 195577 bytes).
+Output written on altarelli_zsm.pdf (2 pages, 198032 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

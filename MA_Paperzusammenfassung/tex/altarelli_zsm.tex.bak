@@ -92,6 +92,7 @@ Die cost function verstehe ich so, dass sie am Ende zählt, wie viele Knoten nic
 \subsection{Offen: Ist das jetzt ein lineares Programm?}
 Und wenn, wieso gibt es das 3. constraint, das sich auf die $x_2$ bezieht, obwohl wir nach einem $x_1$ suchen. 
 
-
+\subsection{Offen: Was heisst hier in dem Paper 'cavity fields with support in Menge'?}
+Bedeutet das, dass die cavity fields nur die Werte -1 und 1 annehmen können?
 
 \end{document}
