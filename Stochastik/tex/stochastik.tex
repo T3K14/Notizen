@@ -14,6 +14,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
+\usepackage{bm}
+
+
 \usepackage{url}
 \usepackage{hyperref}
 
@@ -236,5 +239,33 @@ die verallg. inv. VF von $F$.\\
 
 \section{Quantil}
 \subsection{Definition via Verteilungsfunktion}
+
+
+\section{Probability mass function}
+\textit{Diese section benötigt noch Feinschliff}
+Die probability mass function (pmf) bezieht sich auf eine diskrete Zufallsvariable und gibt die Wahrscheinlichkeit dafür an, dass die Zufallsvariable genau einen bestimmten Wert annimmt. Sie ist damit sozusagen die Verteilung einer diskreten ZV.
+Sie ist die Funktion $p_X : \mathbb{R} \rightarrow [0,1]$ welche definiert ist über:
+\begin{align}
+p_X(x_i) = P(X=x_i),
+\end{align}
+wobei $P$ ein Wahrscheinlichkeitsmaß ist.\\
+Die probability mass function einer diskreten ZV $X$ kann als Spezialfall von sowohl einer Verteilung, als auch von einer Wahrscheinlichkeitsdichte (bezogen auf das Zählmaß) sein.
+
+\subsection{joint mass function}
+Wenn man zwei oder mehr diskrete ZV hat, haben diese eine joint pmf, welche die Wahrscheinlichkeiten für Kombinationen von Realisierungen angibt:
+\begin{align}
+p_{X,Y}(x,y) = P(X=x \: \text{and} \: Y=y)
+\end{align}
+
+\subsection{marginal pmf}
+Wenn ich eine joint distribution von zwei ZV $X$ und $Y$ habe und die marginale Verteilung lediglich von nur einer der beiden möchte erhalte ich diese, wenn ich einfach nur die Werte bezüglich dieser anschaue und damit die Werte der anderen nicht berücksichtige. Sagen wir, wir interessieren uns oBdA nur für $X$. Die pmf $p_X$ für ein bel. $x$ kann dann über die Summe über alle Werte von $p_{X,Y}$ erhalten werden, bei welcher $X=x_i$ gilt:
+\begin{align}
+p_X(x_i) = \sum_j p_{X,Y}(x_i, y_j)
+\end{align}
+Das ganze lässt sich genauso auf mehrere ZV übertragen:
+\begin{align}
+p_{X_i}(k) = \sum p(x_1, x_2, \dots, x_{i-1}, k, x_{i+1}, \dots, x_n),
+\end{align}
+wobei die Summe über alle möglichen $\bm x$ geht für welche $x_i = k$ gilt.
 
 \end{document}

@@ -20,3 +20,6 @@
 \contentsline {section}{\numberline {9}Verallgemeinerte inverse Verteilungsfunktion / Quantilfunktion}{4}{section.9}%
 \contentsline {section}{\numberline {10}Quantil}{5}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Definition via Verteilungsfunktion}{5}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Probability mass function}{5}{section.11}%
+\contentsline {subsection}{\numberline {11.1}joint mass function}{5}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}marginal pmf}{5}{subsection.11.2}%
