@@ -36,6 +36,12 @@ Die drei sind: copy constructor, destructor und copy assignment operator. Und di
 \section{Pointer}
 Man sollte statt nackten Pointern eigentlich nur shared-pointer verwenden.
 
+\section{Weak pointer}
+Wenn man auf einen Weak-pointer \texttt{w} der auf ein Objekt zeigt auf das kein shared-pointer mehr zeigt, bekommt man mit \texttt{w.lock()} wieder einen shared-pointer, der aber nicht gültig ist. Daher sollte man immer bevor man auf einen weak-pointer lock aufruft vorher mit \texttt{w.expired()} abchecken, ob das noch gültig ist. Oder man überprüft anschließend, ob der shared-pointer den man bekommt gültig ist. 
+
+\section{struct}
+Felder und Methoden einer Struct sind immer alle defaultmäßig public.
+
 \section{aquisition is initialization}
 
 
