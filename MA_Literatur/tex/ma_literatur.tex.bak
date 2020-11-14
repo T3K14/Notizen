@@ -1,0 +1,71 @@
+\documentclass[paper=a4,10pt]{scrartcl}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+\usepackage{fancyref}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{hyperref}
+
+\usepackage[a4paper, includehead, includefoot]{geometry}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+\begin{document}
+
+\title{MA-Logbuch}
+%\author{Author's Name}
+
+\section{Paper}
+\subsection{STOCHASTIC SPANNING TREE PROBLEM}
+\paragraph{Status} Noch nicht angeschaut
+\paragraph{Verzeichnis} paper/von mir rausgesucht/ altes stochastic spanning tree
+
+\subsection{Cavity Method:  Message Passing from a Physics Perspective}
+
+Enthält Notizen einer Vorlesung von Marc Mezard und ist wohl physikalischer motiviert.
+
+\paragraph{Status} Noch nicht angeschaut
+\paragraph{Verzeichnis} paper/von mir rausgesucht/cavity method
+
+\subsection{The physical Meaning of Replica Symmetry Breaking}
+
+physikalischer Ansatz zu Replica Symmetry breaking
+
+\paragraph{Status} Noch nicht angeschaut
+\paragraph{Verzeichnis} paper/von mir rausgesucht/replica sym breaking
+
+\subsection{The number of matchings in randomgraphs}
+
+ist auch von Mezard
+
+\paragraph{Status} Noch nicht angeschaut
+\paragraph{Verzeichnis} paper/von mir rausgesucht/Zdeborova\_2006\_J.\_Stat.\_Mech.\_2006\_P05003
+
+
+\section{Bücher}
+\subsection{Integer Programmingand CombinatorialOptimization}
+
+Enthält zu dem Vortrag zu MST das Grundlagenpaper ``On Two-Stage Stochastic Minimum Spanning Trees'' ab Seite 330
+
+\paragraph{Status} Noch nicht angeschaut
+\paragraph{Verzeichnis} paper/von mir rausgesucht/2005\_Book\_IntegerProgrammingAndCombinato
+
+\subsection{towards new, statistical-mechanics motivated algorithms}
+Kapitel aus Hartmanns Buch über BP und SP
+
+\paragraph{Status} Noch nicht angeschaut
+\paragraph{Verzeichnis} paper/chapter\_message\_passing
+
+\section{Vorträge}
+
+
+
+\end{document}

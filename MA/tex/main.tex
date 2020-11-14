@@ -130,5 +130,15 @@ In the canonical and grand-canonical ensembles the meaning of the partition func
 
 \subsection{Offen: Wie lässt sich die Berechnung der ZS auf den ER-Graph übertragen, oder auch: Was bedeutet es, die ZS für einen Knoten auszurechnen (Vorl 13 Opti.)}
 
+\subsection{Offen: Zu Cavity graphen und min VC}
+Wenn ich einen Knoten $i$ habe und für seinen Cavity-Graphen ein min. VC ausrechne und dabei rauskommt, dass ein Nachbarknoten $j_0 \in N(i)$ in keinem min VC des Cavitygraphen $G_i$ vorkommt, bedeutet das ja, dass dessen Nachbarn (außer $i$) in jedem min VC von $G_i$ vorkommen müssen.\\
+Jetzt die Frage: Warum gilt für alle Nachbarn $k \in N(j_0) \setminus \{i\}$, dass $\pi_{k|j_0} > 0$ ist? \\
+\textit{Wenn klar ist, dass es ein minimales VC des neuen Graphen ohne $j_0$ geben muss bei welchem alle Nachbarn $k$ gecovert sind, wäre die Aussage schon bewiesen. Klar ist, dass wenn es ein solches min VC gibt, dass dieses auch ein min VC des Graphen mit $j_0$ wäre, da alle Kanten die zu $j_0$ führen automatisch abgedeckt wären. Aber gilt diese Folgerung auch andersrum?\\
+Ein anderer Ansatz wäre zu überlegen, ob jeder Nachbar $k$ individuell mindestens in einem min VC vom neuen Graphen vorkommen muss.\\
+Vielleicht muss ich die Unabhängigkeit noch mehr in Betracht ziehen?}\\
+\\
+%Alex meinte jetzt, dass das irgendwie schon durch den Anspruch an globale minimale VC des gesamten Graphen begründet sei, aber das finde ich komisch, da das vorher noch nie ein Thema war und ich dachte, dass der cavity graph sich seine min VC selber bauen darf.
+
+
 
 \end{document}
