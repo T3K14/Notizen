@@ -18,6 +18,7 @@
 \usepackage{hyperref}
 
 \usepackage{bm}
+\usepackage{siunitx}		% um SI-Einheiten richtig zu schreiben
 
 \usepackage[a4paper, includehead, includefoot]{geometry}
 \geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
@@ -26,6 +27,11 @@
 
 \title{NBTI-Theorie}
 %\author{Author's Name}
+\section{Begriffe}
+\paragraph{$N_A$, $N_D$}: Die Dichten der für die Dotierung verwendeten Akzeptoren, bzw. Donatoren
+\paragraph{$N_V$, $N_C$}: die effektiven Zustandsdichten, welche über Approximation der Anzahl der Zustände zB im Leiungsband erhalten werden (siehe Section \ref{seq:ladungskonz} und \ref{sec:effZD}). $N_V$ .. Valenzband, $N_C$ .. conduction Band.
+\paragraph{$n_e$ bzw $n_n$ und $n_h$ bzw $n_p$} Ladungsträgerkonzentrationen/Dichte in den jeweiligen Bändern
+
 
 \section{Grundlagen}
 \subsection{Basic Band Theory}
@@ -61,6 +67,81 @@ Z(\bm k) d^3k = D(E)dE.
 \textit{Wo kommt das her?}
 
 Die Herleitung im Marx ist für mich immer durch irgendwelche Approximationen nicht konkret genug. Jedoch kommt dabei das überall stehende Ergebnis mit $D(E) \sim \sqrt{E}$ raus.
+
+\section{Fermi-Verteilung}
+Sie gibt die Wahrscheinlichkeit dafür, dass ein Platz bei der Energie $E$ und Temperatur $T$ in einem System von Fermionen, das durch die Fermienergie $E_F$ charakterisiert ist, besetzt ist.
+Ein System , bei dem die Besetzung der verfügbaren Plätze dieser Verteilung folgt, ist automatisch im thermodynamischen Gleichgewicht, d.h. es hat die kleinstmögliche freie Energie $G = E-TS$.
+\begin{align}
+f(E;E_F, T) = \frac{1}{e^{\frac{E-E_F}{k_BT}}+1}
+\end{align}
+Die Fermienergie ist die Energie bei der $f(E_F; E_F, T) = 1/2$ gilt. Für sie gilt, dass sie wenn man T gegen Null gehen lässt angibt welche Energie der letzte noch besetzt Platz hat.
+Die Fermienergie ist bzgl $E_F$ punktsymmetrisch und man kann sie für $E-E_F > 2k_BT$ durch die Boltzmannnäherung ersetzen:
+\begin{align}
+f(E,T) \approx e^{-\frac{E-E_F}{k_BT}}
+\end{align}
+
+\section{Ladungsträgerkonzentration etc.}
+\label{seq:ladungskonz}
+Die Frage nach der Anzahl an Zuständen im Leitungsband bei geg. Temperatur $T$ wird wie folgt beantwortet: Die Dichte der Elektronen bei Energie $E$ ist gleich die Zahl der vorhandenen Plätze (Zustandsdichte $D(E)$) mal die Wahrscheinlichkeit der Besetzung ($f(E)$) und das dann über alle Energien aufsummiert (integriert).
+
+\textit{Also wie viele Zustände gibt es mal die Wahrscheinlichkeit diese auch zu besetzen?}
+Mit Boltzmann Näherung und Abschätzung durch $N_{\text{eff}}$ wird die Dichte der Elektronen im Leitungsband dann noch abgeschätzt:
+\begin{align}
+\label{eq:ne}
+n_e &= \int^{\infty}_{E_L} D(E) f(E; E_F, T) dE \\
+&\approx N^C_{\text{eff}} \;  e^{-\frac{E_L-E_F}{k_B T}}
+\end{align}
+Die untere Gleichung definiert $N_{\text{eff}}$.
+
+Jetzt wollen wir die Dichte der Löcher berechnen. Die Dichte der Löcher zur Energie $E$ ist gleich der Zahl der vorhandenen Plätze ($D(E)$) mal die Wahrscheinlichkeit der Nichtbesetzung ($1-f(E)$):
+\begin{align}
+\label{eq:nh}
+n_h &= \int_{-\infty}^{E_V} D(E) [1-f(E; E_F, T)] dE \\
+&\approx N^V_{\text{eff}} \;  e^{-\frac{E_F-E_V}{k_B T}}
+\end{align}
+\subsection{Massenwirkungsgesetz}
+Für den perfekten (intrinsischen) Halbleiterkristall stammen alle Elektronen im Leitungsband aus dem Valenzband:
+\begin{align}
+n_e = n_h =: n_i
+\end{align}
+
+Das Massenwirkungsgesetz lässt sich wie folgt über \ref{eq:ne} und \ref{eq:nh} berechnen). Durch Gleichsetzen von $n_e$ und $n_h$ im intrinsischen Fall erhält man:
+\begin{align}
+n_i = N_{\text{eff}} \; e^{-\frac{E_L-E_V}{2k_BT}} = N_{\text{eff}} \; e^{-\frac{E_G}{2k_BT}}
+\end{align}
+(Dabei geht mit ein, dass in diesem Fall wohl die effektiven Zustandsdichten gleich sind, weil sonst könnte man die nicht wegkürzen um den einfachen Ausdruck $E_F = \frac{E_L + E_V}{2}$ für die Fermienergie zu erhalten den man dann einsetzen kann.)
+Wenn man jetzt $n_e$ und $n_h$ miteinander multiplizert erhält man:
+\begin{align}
+n_e \cdot n_h = N^2_{\text{eff}} \; e^{2\frac{-E_L + E_F - E_F + E_V}{2k_BT}} = n_1^2
+\end{align}
+Da aber für die letzte Rechnung gar nicht vorgegeben war, dass es sich um einen intrinsischen HL handelt, gilt allgemein das Massenwirklungsgesetz:
+\begin{align}
+n_e \cdot n_h = n_i^2
+\end{align}
+
+Die Energielücke und die intrinsische Ladungsträgerdichte stellen im Grunde den selben Materialparameter dar:
+\begin{align}
+n_i = N_{\text{eff}} e^{- \frac{E_L-E_F}{k_BT}}
+\end{align}
+\section{effektive Zustandsdichte}
+\label{sec:effZD}
+Sie ist diejenige Zustandsdichte (Zahl der Zustände pro Volumen), die von Elektronen im Leitungsband, bzw Löchern im Valenzband besetzt werden können und bei der statt der Masse des Elektrons die effektive Masse für das jeweilige Band eingesetzt werden muss.
+Für das Leitungsband zB:
+\begin{align}
+N_C = 2 \cdot \left( \frac{2 \pi m^* k_B T}{h^2} \right)^{\frac{3}{2}} \cdot M_C
+\end{align}
+wobei $M_C$ die Anzahl der Energieminima des Bandes entspricht. Die effektive Zustandsdichte wird benötigt, um die Zahl der Ladungsträger im Leitungsband zu berechnen (ich glaube siehe \ref{seq:ladungskonz}).
+
+\section{Ladungsträgerkonzentration}
+Ist die Anzahl der zum elektrischen Strom beitragenden Ladungsträger pro Volumen (also eine Art Dichte).
+
+\section{Dotierung}
+Wenn man ein Phosphoratom in einen Siliziumkristall einbringt bleibt nach der Bindung mit vier Nachbarsiliziumatomen ein Elektron übrig, welches nur leicht an das Phosphoratom gebunden ist. Eine kleine Energie (ca. \SI{50}{\milli\volt}) reichen aus, um es zu lösen und damit ins Leitungsband zu heben. Die solche Dotierung, welche Elektronen hinzufügt nennt man n-Dotierung.\\
+Wenn man ein ein Boratom (Akzeptor) einbringt, bleibt nach der Bindung ein Loch, welches mit wenig Energie von einem Elektron im nahegelegenen Valenzband besetzt werden kann, was dann dafür sorgt, dass sich nun ein Loch im Valenzband befindet.\\\\
+Dotierung beeinflusst die Lage der Fermienergie.
+
+Für die Dichte 	
+
 
 
 \section{Erklärungen}

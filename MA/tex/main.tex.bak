@@ -125,6 +125,19 @@ Die ZS ist ein Maß für das Volumen, das ein System im Phasenraum einnimmt.
 Vom mikrokanonischen Ensemble ausgehend ist sie eine Funktion der Temperatur $T$ sowie der Mikrozustandsenergien $E_1, E_2, \dots$, welche durch andere thermodynamische Größen ($V$,$N$, etc.) bestimmt werden. Die ZS spielt die Rolle der Normalisierungskonstante und ist nicht abhängig von einem Mikrozustand. Sie sorgt also dafür, dass sich die Wahrscheinlichkeiten $P_s = \frac{1}{Z}e^{-\beta E_s}$ dafür, dass sich das System im Mikrozustand $s$ befindet zu 1 aufsummieren. \\
 In the canonical and grand-canonical ensembles the meaning of the partition function remains the same, but since energy is not anymore fixed the expression is going to change.
 
+\section{Survey Propagation}
+\subsection{Cluster}
+Am Beispiel von min. VC ist ein Cluster eine Zusammenfassung von min. VC die sich nur durch eine kleine Zahl von Änderungen (von Knotenzuständen?) unterscheiden. Dabei gehts aber immer um den selben Graphen.
+
+\subsection{states pro Cluster und Cavity Graph}
+Ich sage, ein Knoten hat in einem bestimmten Cluster von ähnlichen min. VC zB den Wert 0, wenn er in keinem min. VC des Clusters gecovert wird.
+Wenn ich einen einzelnen Graphen habe und habe dazu den cavity graphen $G_i$ bei welchem für alle Nachbarn von $i$ gilt, dass sie in $G_i$ immer in allen min. VC gecovert sind, dann kann ich für $i$ sagen, dass ich ihn im kompletten Graphen gleich Null setzen kann, da ein min. VC vom cavity graphen so auch eins von $G$ ist.\\\\
+Unter der Annahme, dass die Aussagen in diese Richtung gemacht werden (von cavity graph wird auf kompletten Graph gefolgert), kann man dann für ein Cluster folgendes sagen:
+Wann wird ein Knoten $i$ im Cluster auf 0 gesetzt? Statt eine Aussage über alle min. VC des Graphen zu machen, schaut man sich hier ja nur die min. VC eines Clusters an.
+Siehe Frage \ref{subsec:cluster_frage}
+%Das geht meiner Meinung nach nur, wenn für jede die obige Aussage gilt, dass in den cavity graphen immer jeweils alle Nachbarn auf 1 gesetzt sind. Wie überträgt sich das jetzt auf eine Gesamtaussage für das Cluster?
+
+
 \section{Fragen}
 \subsection{Offen: Warum kann man die ZS rekursiv zusammenmultiplizieren (im Vorlesung 13 Optimierungsalgorithmen)}
 
@@ -138,7 +151,19 @@ Ein anderer Ansatz wäre zu überlegen, ob jeder Nachbar $k$ individuell mindest
 Vielleicht muss ich die Unabhängigkeit noch mehr in Betracht ziehen?}\\
 \\
 %Alex meinte jetzt, dass das irgendwie schon durch den Anspruch an globale minimale VC des gesamten Graphen begründet sei, aber das finde ich komisch, da das vorher noch nie ein Thema war und ich dachte, dass der cavity graph sich seine min VC selber bauen darf.
+Alex meinte, dass die Begründung eher aus der anderen Richtung kommt: ``Das `implies' soll ausdrücken was die Voraussetzungen dafür sind, dass man $j_0=0$ setzen darf.'' Also nach dem Motto: Unter welchen Umständen kann ich $j_0=0$ setzen. Wenn es so ist, ist das sehr verwirrend geschrieben. 
 
+\subsection{Offen: selbes Thema}
+Er schreibt im Abschnitt über SP, dass ein Knoten im Jokerstate exakt einen Nachbarknoten hat, der im Cavitygraphen den State 0 hat, also nie gecovert wird in min. VC des $G_i$. Diese Aussage gilt für einen Graphen, der aus Vier knoten besteht, welche als Linie verbunden sind, denn nehme ich zB den rechtesten Knoten raus, dann kommt dessen Nachbar in keinem min VC von $G_i$ vor. Wenn ich jedoch einen vollständigen Graphen aus drei Knoten nehme, kommen immer zwei in einem min. VC vor, dh alle haben den Jokerstate, aber wenn ich dann einen rausnehme, bleiben zwei verbundene übrig, bei welchen die Aussage scheitert, da ich egal welchen ich nehme ein min VC habe und es keinen Nachbarn gibt, welcher in keinem min VC des $G_i$ vorkommt.\\
+Die Aussage ist also nicht allgemein gültig, aber vielleicht für Graphen die Trees / treelike sind? 
+Ich muss die Aussage auch nochmal aus dem Punkt betrachten, dass das Zustände sind, die pro Cluster gelten, also zB state 1 sagt aus, dass der Knoten in allen min VC pro Cluster vorkommt, also pro Graph in allen min VCs.
 
+Hier ist wieder die Unabhängigkeit ausschlaggebend. Die Aussage trifft nur für Bäume zu.
+
+\subsection{Offen: Cluster und cavity graph}
+\label{subsec:cluster_frage}
+Wenn ich es so sehe, dass die States Aussagen in Bezug auf die Cluster machen, dann: Warum muss ein Knoten $i$, der in einem Cluster den Wert 0 hat alle Nachbarn in state 1 ODER * haben? Wenn die Aussage anders rum gemacht wird, dann habe ich doch für ein Cluster die selbe Aussage wie für alle Lösungen für ein min. VC eines Graphen, nämlich dass ich einen Knoten nur dann auf Null setzten kann, wenn im Cavity graph immer alle Nachbarn auf 1 gesetzt sind oder?
+
+Ja, aber hier ist wieder die Unabhängigkeit essentiell. Da es min VC gibt in denen Nachbarn mit Jokerstate gecovert sind, nehme ich mir da die unabhängig sind genau solche damit ich meinen neuen Knoten einfach dazunehmen kann ohne weitere Knoten covern zu müssen.
 
 \end{document}
