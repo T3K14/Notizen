@@ -135,6 +135,19 @@ wobei $M_C$ die Anzahl der Energieminima des Bandes entspricht. Die effektive Zu
 \section{Ladungsträgerkonzentration}
 Ist die Anzahl der zum elektrischen Strom beitragenden Ladungsträger pro Volumen (also eine Art Dichte).
 
+Uni-Kiel Seite:\\
+Die Konzentrationen der Elektronen/Löcher ergeben sich ja über das Produkt der Zustandsdichte mit der Fermi-Verteilung und anschließende Integration darüer.
+
+
+\section{Fermi-Energie}
+Sie ist über den Energiewert definiert, bei welchem die Fermi-Verteilung gleich 1/2 ist.
+
+\subsection{intrinsischer Halbleiter}
+Im intrinsische HL herrscht Ladungsneutralität, dh. zu jedem Elektron gibt es auch ein Loch. Die Dichte der Elektronen im Leitungband ist also identisch zur Dichte im Valenzband.
+
+\textit{Ausdrücke wie 'im Valenzband' beziehen sich nicht auf Orte, sondern auf Energien}
+
+
 \section{Dotierung}
 Wenn man ein Phosphoratom in einen Siliziumkristall einbringt bleibt nach der Bindung mit vier Nachbarsiliziumatomen ein Elektron übrig, welches nur leicht an das Phosphoratom gebunden ist. Eine kleine Energie (ca. \SI{50}{\milli\volt}) reichen aus, um es zu lösen und damit ins Leitungsband zu heben. Die solche Dotierung, welche Elektronen hinzufügt nennt man n-Dotierung.\\
 Wenn man ein ein Boratom (Akzeptor) einbringt, bleibt nach der Bindung ein Loch, welches mit wenig Energie von einem Elektron im nahegelegenen Valenzband besetzt werden kann, was dann dafür sorgt, dass sich nun ein Loch im Valenzband befindet.\\\\
@@ -144,7 +157,7 @@ Für die Dichte
 
 
 \section{pn-Übergang}
-Wenn man zwei unterschiedlich dotierte Halbleiter verbindet ist das Gesamtkonstrukt zwar immernoch elektrisch neutral, es gibt aber einen Konzentrationsgradienten von Ladungsträgern. Die Majos wandern durch Diffusion ins andere Gebiet, in dem die entsprechende Konzentration geringer ist, wandern. Auf beiden Seiten gibt es nun Rekombination und auf beiden Seiten fehlen nun Ladungsträger in den vorher ungeladenen Materialien. Die zu den fehlenden beweglichen Ladungsträgern gehörenden Dotieratome verursachen nun ein elektrisches Feld aufgrund ihrer nicht mehr kompensierten Raumladungen. Die dadurch resultierende Driftbewegung ist der Diffusionsbewegung entgegenwirkend und es kommt zu einem Gleichgewicht. Das entstandene el. Feld drückt die verbleibenden freien Ladungsträger zurück und es entsteht beiderseits der Grenze eine Verarmungszone ohne freie Ladungsträger in der nur noch die ortsfesten Raumladungen verbleiben (deshalb auch Raumladungszone).
+Wenn man zwei unterschiedlich dotierte Halbleiter verbindet ist das Gesamtkonstrukt zwar immernoch elektrisch neutral, es gibt aber einen Konzentrationsgradienten von Ladungsträgern. Die Majos wandern durch Diffusion ins andere Gebiet, in dem die entsprechende Konzentration geringer ist. Auf beiden Seiten gibt es nun Rekombination und auf beiden Seiten fehlen nun Ladungsträger in den vorher ungeladenen Materialien. Die zu den fehlenden beweglichen Ladungsträgern gehörenden Dotieratome verursachen nun ein elektrisches Feld aufgrund ihrer nicht mehr kompensierten Raumladungen. Die dadurch resultierende Driftbewegung ist der Diffusionsbewegung entgegenwirkend und es kommt zu einem Gleichgewicht. Das entstandene el. Feld drückt die verbleibenden freien Ladungsträger zurück und es entsteht beiderseits der Grenze eine Verarmungszone ohne freie Ladungsträger in der nur noch die ortsfesten Raumladungen verbleiben (deshalb auch Raumladungszone).
 
 Die Ausdehnung der Verarmungszone ist abhängig von der Dotierung der Zone und der intrinsichen Ladungsträgerdichte des Materials. Bei gleich hoher Dotierungsdichte von n- und p-Gebiet ist die Zone symmetrisch. Bei ungleichen Dotierungsdichten breitet sich die RLZ weiter in das weniger stark dotierte Gebiet aus.
 

@@ -133,7 +133,23 @@ N_C = 2 \cdot \left( \frac{2 \pi m^* k_B T}{h^2} \right)^{\frac{3}{2}} \cdot M_C
 wobei $M_C$ die Anzahl der Energieminima des Bandes entspricht. Die effektive Zustandsdichte wird benötigt, um die Zahl der Ladungsträger im Leitungsband zu berechnen (ich glaube siehe \ref{seq:ladungskonz}).
 
 \section{Ladungsträgerkonzentration}
+\label{sec:carrier_concentration}
 Ist die Anzahl der zum elektrischen Strom beitragenden Ladungsträger pro Volumen (also eine Art Dichte).
+
+Uni-Kiel Seite:\\
+Die Konzentrationen der Elektronen/Löcher ergeben sich ja über das Produkt der Zustandsdichte mit der Fermi-Verteilung und anschließende Integration darüber. Die entscheidende Größe, die den Wert des Integrals massiv beeinflussen kann ist der 'Zipfel' der fermi-Verteilung, der oberhalb bzw unterhalb der Bandlücke herausragt.
+\textit{Das wird damit begründet, dass man die Zustandsdichte durch die 'wirkliche Zustandsdichte' einigermaßen ersetzen kann und das eine Art Konstante ist, wobei ich nicht weiß, was mit 'wirkliche Zustandsdichte' gemeint ist.}
+
+
+\section{Fermi-Energie}
+Sie ist über den Energiewert definiert, bei welchem die Fermi-Verteilung gleich 1/2 ist.
+
+\subsection{intrinsischer Halbleiter}
+Im intrinsische HL herrscht Ladungsneutralität, dh. zu jedem Elektron gibt es auch ein Loch. Die Dichte der Elektronen im Leitungband ist also identisch zur Dichte im Valenzband.
+
+\textit{Ausdrücke wie 'im Valenzband' beziehen sich nicht auf Orte, sondern auf Energien}
+
+Da in \ref{sec:carrier_concentration} beschrieben wird, dass die Ladungsträgerkonzentrationen stark von den Fermi-Verteilungszipfeln abhängen und im intrinsischen Fall ja gleich sind, müssen die Zipfel sowohl im Valenz, als auch im Leitungsband gleichweit aus der Lücke herausragen und da die Verteilung symmetrisch ist, muss die Fermienergie ziemlich genau in der Mitte der Bandlücke liegen. 
 
 \section{Dotierung}
 Wenn man ein Phosphoratom in einen Siliziumkristall einbringt bleibt nach der Bindung mit vier Nachbarsiliziumatomen ein Elektron übrig, welches nur leicht an das Phosphoratom gebunden ist. Eine kleine Energie (ca. \SI{50}{\milli\volt}) reichen aus, um es zu lösen und damit ins Leitungsband zu heben. Die solche Dotierung, welche Elektronen hinzufügt nennt man n-Dotierung.\\
@@ -144,7 +160,7 @@ Für die Dichte
 
 
 \section{pn-Übergang}
-Wenn man zwei unterschiedlich dotierte Halbleiter verbindet ist das Gesamtkonstrukt zwar immernoch elektrisch neutral, es gibt aber einen Konzentrationsgradienten von Ladungsträgern. Die Majos wandern durch Diffusion ins andere Gebiet, in dem die entsprechende Konzentration geringer ist, wandern. Auf beiden Seiten gibt es nun Rekombination und auf beiden Seiten fehlen nun Ladungsträger in den vorher ungeladenen Materialien. Die zu den fehlenden beweglichen Ladungsträgern gehörenden Dotieratome verursachen nun ein elektrisches Feld aufgrund ihrer nicht mehr kompensierten Raumladungen. Die dadurch resultierende Driftbewegung ist der Diffusionsbewegung entgegenwirkend und es kommt zu einem Gleichgewicht. Das entstandene el. Feld drückt die verbleibenden freien Ladungsträger zurück und es entsteht beiderseits der Grenze eine Verarmungszone ohne freie Ladungsträger in der nur noch die ortsfesten Raumladungen verbleiben (deshalb auch Raumladungszone).
+Wenn man zwei unterschiedlich dotierte Halbleiter verbindet ist das Gesamtkonstrukt zwar immernoch elektrisch neutral, es gibt aber einen Konzentrationsgradienten von Ladungsträgern. Die Majos wandern durch Diffusion ins andere Gebiet, in dem die entsprechende Konzentration geringer ist. Auf beiden Seiten gibt es nun Rekombination und auf beiden Seiten fehlen nun Ladungsträger in den vorher ungeladenen Materialien. Die zu den fehlenden beweglichen Ladungsträgern gehörenden Dotieratome verursachen nun ein elektrisches Feld aufgrund ihrer nicht mehr kompensierten Raumladungen. Die dadurch resultierende Driftbewegung ist der Diffusionsbewegung entgegenwirkend und es kommt zu einem Gleichgewicht. Das entstandene el. Feld drückt die verbleibenden freien Ladungsträger zurück und es entsteht beiderseits der Grenze eine Verarmungszone ohne freie Ladungsträger in der nur noch die ortsfesten Raumladungen verbleiben (deshalb auch Raumladungszone).
 
 Die Ausdehnung der Verarmungszone ist abhängig von der Dotierung der Zone und der intrinsichen Ladungsträgerdichte des Materials. Bei gleich hoher Dotierungsdichte von n- und p-Gebiet ist die Zone symmetrisch. Bei ungleichen Dotierungsdichten breitet sich die RLZ weiter in das weniger stark dotierte Gebiet aus.
 
