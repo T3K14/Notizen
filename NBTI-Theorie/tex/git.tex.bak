@@ -87,9 +87,8 @@ Die Frage nach der Anzahl an Zuständen im Leitungsband bei geg. Temperatur $T$ 
 \textit{Also wie viele Zustände gibt es mal die Wahrscheinlichkeit diese auch zu besetzen?}
 Mit Boltzmann Näherung und Abschätzung durch $N_{\text{eff}}$ wird die Dichte der Elektronen im Leitungsband dann noch abgeschätzt:
 \begin{align}
-\label{eq:ne}
-n_e &= \int^{\infty}_{E_L} D(E) f(E; E_F, T) dE \\
-&\approx N^C_{\text{eff}} \;  e^{-\frac{E_L-E_F}{k_B T}}
+n_e &= \int^{\infty}_{E_L} D(E) f(E; E_F, T) dE \label{eq:ne} \\ 
+&\approx N^C_{\text{eff}} \;  e^{-\frac{E_L-E_F}{k_B T}} \label{eq:ne2}
 \end{align}
 Die untere Gleichung definiert $N_{\text{eff}}$.
 
@@ -108,6 +107,7 @@ n_e = n_h =: n_i
 Das Massenwirkungsgesetz lässt sich wie folgt über \ref{eq:ne} und \ref{eq:nh} berechnen). Durch Gleichsetzen von $n_e$ und $n_h$ im intrinsischen Fall erhält man:
 \begin{align}
 n_i = N_{\text{eff}} \; e^{-\frac{E_L-E_V}{2k_BT}} = N_{\text{eff}} \; e^{-\frac{E_G}{2k_BT}}
+\label{eq:intri_gleich}
 \end{align}
 (Dabei geht mit ein, dass in diesem Fall wohl die effektiven Zustandsdichten gleich sind, weil sonst könnte man die nicht wegkürzen um den einfachen Ausdruck $E_F = \frac{E_L + E_V}{2}$ für die Fermienergie zu erhalten den man dann einsetzen kann.)
 Wenn man jetzt $n_e$ und $n_h$ miteinander multiplizert erhält man:
@@ -133,11 +133,18 @@ N_C = 2 \cdot \left( \frac{2 \pi m^* k_B T}{h^2} \right)^{\frac{3}{2}} \cdot M_C
 wobei $M_C$ die Anzahl der Energieminima des Bandes entspricht. Die effektive Zustandsdichte wird benötigt, um die Zahl der Ladungsträger im Leitungsband zu berechnen (ich glaube siehe \ref{seq:ladungskonz}).
 
 \section{Ladungsträgerkonzentration}
+\label{sec:carrier_concentration}
 Ist die Anzahl der zum elektrischen Strom beitragenden Ladungsträger pro Volumen (also eine Art Dichte).
 
 Uni-Kiel Seite:\\
-Die Konzentrationen der Elektronen/Löcher ergeben sich ja über das Produkt der Zustandsdichte mit der Fermi-Verteilung und anschließende Integration darüer.
+Die Konzentrationen der Elektronen/Löcher ergeben sich ja über das Produkt der Zustandsdichte mit der Fermi-Verteilung und anschließende Integration darüber. Die entscheidende Größe, die den Wert des Integrals massiv beeinflussen kann ist der 'Zipfel' der fermi-Verteilung, der oberhalb bzw unterhalb der Bandlücke herausragt.
+\textit{Das wird damit begründet, dass man die Zustandsdichte durch die 'wirkliche Zustandsdichte' einigermaßen ersetzen kann und das eine Art Konstante ist, wobei ich nicht weiß, was mit 'wirkliche Zustandsdichte' gemeint ist.}
 
+
+\section{Dotierung}
+Wenn man ein Phosphoratom in einen Siliziumkristall einbringt bleibt nach der Bindung mit vier Nachbarsiliziumatomen ein Elektron übrig, welches nur leicht an das Phosphoratom gebunden ist. Eine kleine Energie (ca. \SI{50}{\milli\volt}) reichen aus, um es zu lösen und damit ins Leitungsband zu heben. Die solche Dotierung, welche Elektronen hinzufügt nennt man n-Dotierung.\\
+Wenn man ein ein Boratom (Akzeptor) einbringt, bleibt nach der Bindung ein Loch, welches mit wenig Energie von einem Elektron im nahegelegenen Valenzband besetzt werden kann, was dann dafür sorgt, dass sich nun ein Loch im Valenzband befindet.\\\\
+Dotierung beeinflusst die Lage der Fermienergie.
 
 \section{Fermi-Energie}
 Sie ist über den Energiewert definiert, bei welchem die Fermi-Verteilung gleich 1/2 ist.
@@ -147,13 +154,22 @@ Im intrinsische HL herrscht Ladungsneutralität, dh. zu jedem Elektron gibt es a
 
 \textit{Ausdrücke wie 'im Valenzband' beziehen sich nicht auf Orte, sondern auf Energien}
 
+Da in Section \ref{sec:carrier_concentration} beschrieben wird, dass die Ladungsträgerkonzentrationen stark von den Fermi-Verteilungszipfeln abhängen und im intrinsischen Fall ja gleich sind, müssen die Zipfel sowohl im Valenz, als auch im Leitungsband gleichweit aus der Lücke herausragen und da die Verteilung symmetrisch ist, muss die Fermienergie ziemlich genau in der Mitte der Bandlücke liegen.
+Wenn ich die Ladungsträgerdichten aus (\ref{eq:intri_gleich}) gleichsetze und nach $E_F$ auflöse, erhalte ich für die Fermienergie im intrinschen Fall:
+\begin{align}
+E_F \approx \frac{E_V + E_F}{2}
+\end{align} 
 
-\section{Dotierung}
-Wenn man ein Phosphoratom in einen Siliziumkristall einbringt bleibt nach der Bindung mit vier Nachbarsiliziumatomen ein Elektron übrig, welches nur leicht an das Phosphoratom gebunden ist. Eine kleine Energie (ca. \SI{50}{\milli\volt}) reichen aus, um es zu lösen und damit ins Leitungsband zu heben. Die solche Dotierung, welche Elektronen hinzufügt nennt man n-Dotierung.\\
-Wenn man ein ein Boratom (Akzeptor) einbringt, bleibt nach der Bindung ein Loch, welches mit wenig Energie von einem Elektron im nahegelegenen Valenzband besetzt werden kann, was dann dafür sorgt, dass sich nun ein Loch im Valenzband befindet.\\\\
-Dotierung beeinflusst die Lage der Fermienergie.
+\subsection{dotierter Halbleiter}
+Sagen wir, wir haben einen mit Donatoren dotierten n-dotierten Halbleiter. Für geringe Temperaturen schaffen es mehr Elektronen von den Donatorniveaus, die etwas höhere Energien haben als die Valenzbandkante, ins Leitungsband. Bezeichnen wir mit $n_L(T)$ die Zahl (oder Volumendichte (gilt wohl für beides)) und mit $N^+_D(T)$ die Zahl der nicht mehr besetzten Zustände bei den Donatoratomen.
+Wir schreiben nun $n_L$ entsprechend (\ref{eq:ne2}) und sagen außerdem allgemein via der Fermi-Verteilung (die gibt ja allg. die Wahrscheinlichkeiten für Besetzung bei geg. Energie für Fermionen an), dass sich die Zahl (Volumen) der noch von Elektronen besetzten Donatorzustände $N_D^0(T)$ der Zahl der Zustände mal die Besetzungswahrscheinlichkeit entsprich
 
-Für die Dichte 	
+Das war alles bisher nur für kleine Temperaturen 
+
+ $N^L_{\text{eff}}$
+
+
+
 
 
 \section{pn-Übergang}
