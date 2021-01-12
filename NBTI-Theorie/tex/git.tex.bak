@@ -32,8 +32,20 @@
 \paragraph{$N_V$, $N_C$}: die effektiven Zustandsdichten, welche über Approximation der Anzahl der Zustände zB im Leiungsband erhalten werden (siehe Section \ref{seq:ladungskonz} und \ref{sec:effZD}). $N_V$ .. Valenzband, $N_C$ .. conduction Band.
 \paragraph{$n_e$ bzw $n_n$ und $n_h$ bzw $n_p$} Ladungsträgerkonzentrationen/Dichte in den jeweiligen Bändern
 
+\paragraph{intrinsischer Halbleiter} Ein reiner Halbleiter mit wenig bis keiner Dotierung. 
+
+\paragraph{Flatband voltage} Wenn im Oxid oder an der Oxid-Halbleiter Schnittstelle keine Ladung vorhanden ist entspricht die Flatbandvoltage einfach der Austrittsarbeitesdifferenz zwischen Gatemetall und Halbleiter.
+
+\paragraph{n-Typ, n-Kanal, NMOS, n-leitend} Diese Begriffe stehen alle für einen Transistor bei welchem Elektronen im Kanal die Ladung transportieren. Grundlage dafür ist ein p-dotiertes Substrat. Analog gilt das selbe für p-Typ, etc. 
+
+\paragraph{Donor-like trap} Donors geben ein Elektron ans Leitungsband ab, während Akzeptoren ein Elektron aus dem Valenzband akzeptieren.
 
 \section{Grundlagen}
+
+\subsection{Work function}
+Ist das selbe wie die Austrittsarbeit. Das ist die Energie, die mindestens aufgewandt werden muss, um ein Elektron aus einem ungeladenen Festkörper zu lösen.
+In einem Halbleiter ist die work function abhängig von der Dotierung an der Oberfläche und da die Ladungsträgerkonzentration durch ein elektrisches Feld an der Oberfläche verändert werden kann, ist sie auch davon abhängig.
+
 \subsection{Basic Band Theory}
 Fangen an mit freiem Elektronengasmodel mit nur einem Elektron in einem Potentialtopf der breite $L$, welcher den Kristall darstellen soll. In diesem Fall kann anscheinend die Energie des Elektrons nur vollständig in kinetischer Form vorliegen. Jetzt wird die zeitunabhängige Schrödingergleichung  mit Potential gleich 0 und periodischen Randbedingungen gelöst zu:
 \begin{align}
@@ -94,9 +106,8 @@ Die untere Gleichung definiert $N_{\text{eff}}$.
 
 Jetzt wollen wir die Dichte der Löcher berechnen. Die Dichte der Löcher zur Energie $E$ ist gleich der Zahl der vorhandenen Plätze ($D(E)$) mal die Wahrscheinlichkeit der Nichtbesetzung ($1-f(E)$):
 \begin{align}
-\label{eq:nh}
-n_h &= \int_{-\infty}^{E_V} D(E) [1-f(E; E_F, T)] dE \\
-&\approx N^V_{\text{eff}} \;  e^{-\frac{E_F-E_V}{k_B T}}
+n_h &= \int_{-\infty}^{E_V} D(E) [1-f(E; E_F, T)] dE \label{eq:nh} \\
+&\approx N^V_{\text{eff}} \;  e^{-\frac{E_F-E_V}{k_B T}} \label{eq:nh2}
 \end{align}
 \subsection{Massenwirkungsgesetz}
 Für den perfekten (intrinsischen) Halbleiterkristall stammen alle Elektronen im Leitungsband aus dem Valenzband:
@@ -112,11 +123,11 @@ n_i = N_{\text{eff}} \; e^{-\frac{E_L-E_V}{2k_BT}} = N_{\text{eff}} \; e^{-\frac
 (Dabei geht mit ein, dass in diesem Fall wohl die effektiven Zustandsdichten gleich sind, weil sonst könnte man die nicht wegkürzen um den einfachen Ausdruck $E_F = \frac{E_L + E_V}{2}$ für die Fermienergie zu erhalten den man dann einsetzen kann.)
 Wenn man jetzt $n_e$ und $n_h$ miteinander multiplizert erhält man:
 \begin{align}
-n_e \cdot n_h = N^2_{\text{eff}} \; e^{2\frac{-E_L + E_F - E_F + E_V}{2k_BT}} = n_1^2
+n_e \cdot n_h = N^2_{\text{eff}} \; e^{2\frac{-E_L + E_F - E_F + E_V}{2k_BT}} = n_i^2
 \end{align}
 Da aber für die letzte Rechnung gar nicht vorgegeben war, dass es sich um einen intrinsischen HL handelt, gilt allgemein das Massenwirklungsgesetz:
 \begin{align}
-n_e \cdot n_h = n_i^2
+n_e \cdot n_h = n_i^2 \label{mwg}
 \end{align}
 
 Die Energielücke und die intrinsische Ladungsträgerdichte stellen im Grunde den selben Materialparameter dar:
@@ -140,11 +151,19 @@ Uni-Kiel Seite:\\
 Die Konzentrationen der Elektronen/Löcher ergeben sich ja über das Produkt der Zustandsdichte mit der Fermi-Verteilung und anschließende Integration darüber. Die entscheidende Größe, die den Wert des Integrals massiv beeinflussen kann ist der 'Zipfel' der fermi-Verteilung, der oberhalb bzw unterhalb der Bandlücke herausragt.
 \textit{Das wird damit begründet, dass man die Zustandsdichte durch die 'wirkliche Zustandsdichte' einigermaßen ersetzen kann und das eine Art Konstante ist, wobei ich nicht weiß, was mit 'wirkliche Zustandsdichte' gemeint ist.}
 
+\section{degenerate Halbleiter}
+In nicht degenerate (entartet?) Halbleitern ist laut Sze die Dopingkonzentration kleiner als $N_C$ und die Ferminiveaus liegen mehr als einig Vielfache von $kT$ unter $E_C$. Die Approximationen (\ref{eq:ne2}) und (\ref{eq:nh2}) gelten wohl anscheinend für nicht degenerate Halbleiter. \\
 
+Für degenerate Level wo die n- oder p-Konzentrationen nah an effektiven Zustandsdichten liegen oder sogar größer sind muss man statt der Boltzmannnäherung den Wert des Fermi-Dirac Integrals nutzen. \\
+
+Ein intrinsischer Halbleiter ist per Definition non degenerate
 \section{Dotierung}
-Wenn man ein Phosphoratom in einen Siliziumkristall einbringt bleibt nach der Bindung mit vier Nachbarsiliziumatomen ein Elektron übrig, welches nur leicht an das Phosphoratom gebunden ist. Eine kleine Energie (ca. \SI{50}{\milli\volt}) reichen aus, um es zu lösen und damit ins Leitungsband zu heben. Die solche Dotierung, welche Elektronen hinzufügt nennt man n-Dotierung.\\
+Wenn man ein Phosphoratom in einen Siliziumkristall einbringt bleibt nach der Bindung mit vier Nachbarsiliziumatomen ein Elektron übrig, welches nur leicht an das Phosphoratom gebunden ist. Eine kleine Energie (ca. \SI{50}{\milli\volt}) reichen aus, um es zu lösen und damit ins Leitungsband zu heben. Die solche Dotierung, welche Elektronen hinzufügt nennt man n-Dotierung. Im Bändermodell liegen die Phosphoratomzustände also etwas unter dem Leitungsband.\\
 Wenn man ein ein Boratom (Akzeptor) einbringt, bleibt nach der Bindung ein Loch, welches mit wenig Energie von einem Elektron im nahegelegenen Valenzband besetzt werden kann, was dann dafür sorgt, dass sich nun ein Loch im Valenzband befindet.\\\\
 Dotierung beeinflusst die Lage der Fermienergie.
+
+Das Massenwirkungsgesetz (\ref{mwg}) gilt anscheinend auch erstmal für dotierte Halbleiter aber nur bis degeneracy, da für degenerate HL $np < n_i^2$ gilt. 
+\textit{Aber ich weiß jetzt nicht wo der Unterschied oder Übergang ist.}
 
 \section{Fermi-Energie}
 Sie ist über den Energiewert definiert, bei welchem die Fermi-Verteilung gleich 1/2 ist.
@@ -155,22 +174,51 @@ Im intrinsische HL herrscht Ladungsneutralität, dh. zu jedem Elektron gibt es a
 \textit{Ausdrücke wie 'im Valenzband' beziehen sich nicht auf Orte, sondern auf Energien}
 
 Da in Section \ref{sec:carrier_concentration} beschrieben wird, dass die Ladungsträgerkonzentrationen stark von den Fermi-Verteilungszipfeln abhängen und im intrinsischen Fall ja gleich sind, müssen die Zipfel sowohl im Valenz, als auch im Leitungsband gleichweit aus der Lücke herausragen und da die Verteilung symmetrisch ist, muss die Fermienergie ziemlich genau in der Mitte der Bandlücke liegen.
-Wenn ich die Ladungsträgerdichten aus (\ref{eq:intri_gleich}) gleichsetze und nach $E_F$ auflöse, erhalte ich für die Fermienergie im intrinschen Fall:
+Wenn ich die Ladungsträgerdichten aus (\ref{eq:intri_gleich}) gleichsetze, dabei die effektiven Zustandsdichten unterscheide und nach $E_F$ auflöse, erhalte ich für die Fermienergie im intrinschen Fall:
 \begin{align}
-E_F \approx \frac{E_V + E_F}{2}
+E_F = E_i \approx \frac{E_V + E_C}{2} + \frac{kT}{2} \ln \left( \frac{N_V}{N_C} \right)
 \end{align} 
+
+und damit kann man $n_i$ auch nochmal etwas genauer aufschreiben als:
+\begin{align}
+n_i = N_C e^{-\frac{E_C-E_i}{kT}} = N_V e^{-\frac{E_i - E_V}{kT}} = \sqrt{N_V N_C} \exp \left( - \frac{E_g}{2kT} \right)
+\end{align}
 
 \subsection{dotierter Halbleiter}
 Sagen wir, wir haben einen mit Donatoren dotierten n-dotierten Halbleiter. Für geringe Temperaturen schaffen es mehr Elektronen von den Donatorniveaus, die etwas höhere Energien haben als die Valenzbandkante, ins Leitungsband. Bezeichnen wir mit $n_L(T)$ die Zahl (oder Volumendichte (gilt wohl für beides)) und mit $N^+_D(T)$ die Zahl der nicht mehr besetzten Zustände bei den Donatoratomen.
-Wir schreiben nun $n_L$ entsprechend (\ref{eq:ne2}) und sagen außerdem allgemein via der Fermi-Verteilung (die gibt ja allg. die Wahrscheinlichkeiten für Besetzung bei geg. Energie für Fermionen an), dass sich die Zahl (Volumen) der noch von Elektronen besetzten Donatorzustände $N_D^0(T)$ der Zahl der Zustände mal die Besetzungswahrscheinlichkeit entsprich
+Wir schreiben nun $n_L$ entsprechend (\ref{eq:ne2}) und sagen außerdem allgemein via der Fermi-Verteilung (die gibt ja allg. die Wahrscheinlichkeiten für Besetzung bei geg. Energie für Fermionen an), dass die Zahl (Volumen) der noch von Elektronen besetzten Donatorzustände $N_D^0(T)$ der Zahl der Zustände mal die Besetzungswahrscheinlichkeit entspricht. Dadurch ergibt sich für $N^+_D$:
+\begin{align}
+N^+_D = N_D - N^0_D = N_D \cdot \left( 1 - f(E_D; E_F, T)\right) 
+\end{align}
 
-Das war alles bisher nur für kleine Temperaturen 
+Wenn ich so $n_L(T)$ und $N^+_D(T)$ gleichsetze, weil ich das ja für kleiner Temperaturen machen kann, kann man zeigen, dass die Fermienergie zwischen $E_L$ und $E_D$ liegt.
 
- $N^L_{\text{eff}}$
+Schaut man sich jetzt nochmal $n_V$, die Ladungsträgerdichte von Löchern im Valenzband an, die sich über (\ref{eq:nh2}) ergibt, hat man nun, da $E_F$ größer geworden ist als im intrinsischen Fall und es wird klar, dass man durch dir n-Dotierung nun mehr Elektronen im Leitungsband als Löcher im Valenzband hat.
 
+Das war alles bisher nur für kleine Temperaturen bei welchen die Zahl der Elektronen die es aus dem Valenzband ins Leitungsband schaffen vernachlässigt werden kann. \\\\
+Jetzt nehmen wir eine so hohe $T$ an, dass es garantiert mehr Elektronen aus dem Valenzband schaffen, als es Donatoren gibt. Damit ist der Unterschied zum intrinsischen Verhalten kaum mehr zu unterscheiden und die Fermienergie ist wie im intrinsischen Fall wieder in der Bandmitte.\\
+Bei hohen Temperaturen liegt sie also in der Mitte und bei niedrigen zwischen $E_L$ und $E_D$. Bei mittleren Temperaturen kann sie also nur irgendwo dazwischen liegen und man erwartet, dass sie für höhere Donatorkonzentrationen später in Richtung Mitte wandert, da es mehr Elektronen aus dem Valenzband benötigt, um die Zahl an Donatorelektronen zu überwiegen.
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{../bilder/fermi_temperatur.png}
+\caption{Lage der Fermienergie bei n-dotierten Halbleitern in Abhängigkeit der Temperatur.}
+\label{fig:fermi_n}
+\end{figure}
 
+Für p-dotierte Halbleiter sieht das folgendermaßen aus:
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{../bilder/fermi_temperatur2.png}
+\caption{Lage der Fermienergie bei p-dotierten Halbleitern in Abhängigkeit der Temperatur.}
+\label{fig:fermi_p}
+\end{figure}
+
+Die Dotierzustände liegen nah am Valenzband und so ist es bei geringer Temperatur möglich, dass Elektronen vom Valenzband in die Akzeptorzustände springen und es mehr Löcher im Valenzband gibt als Elektronen im Leitungsband. Das Ferminiveau liegt zwischen $E_V$ und $E_A$ und es gibt mehr Löcher im Valenzband als Elektronen im Leitungsband.
+
+\subsection{bei Metallen}
+Bei Metallen ist die Fermienergie die Austrittsarbeit.
 
 \section{pn-Übergang}
 Wenn man zwei unterschiedlich dotierte Halbleiter verbindet ist das Gesamtkonstrukt zwar immernoch elektrisch neutral, es gibt aber einen Konzentrationsgradienten von Ladungsträgern. Die Majos wandern durch Diffusion ins andere Gebiet, in dem die entsprechende Konzentration geringer ist. Auf beiden Seiten gibt es nun Rekombination und auf beiden Seiten fehlen nun Ladungsträger in den vorher ungeladenen Materialien. Die zu den fehlenden beweglichen Ladungsträgern gehörenden Dotieratome verursachen nun ein elektrisches Feld aufgrund ihrer nicht mehr kompensierten Raumladungen. Die dadurch resultierende Driftbewegung ist der Diffusionsbewegung entgegenwirkend und es kommt zu einem Gleichgewicht. Das entstandene el. Feld drückt die verbleibenden freien Ladungsträger zurück und es entsteht beiderseits der Grenze eine Verarmungszone ohne freie Ladungsträger in der nur noch die ortsfesten Raumladungen verbleiben (deshalb auch Raumladungszone).

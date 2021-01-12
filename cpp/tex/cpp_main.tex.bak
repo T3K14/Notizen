@@ -44,9 +44,22 @@ Felder und Methoden einer Struct sind immer alle defaultmäßig public.
 
 \section{aquisition is initialization}
 
+\section{virtual und override}
+Virtual Funktionen werden zur Laufzeit gebunden, also nicht schon beim compilen. D.h. man hat zB eine Basisklasse Haustier und weiss, dass jedes Haustier einen Laut von sich geben soll, dann kann man in der Basisklasse diese Funktionalitaet schon bereit stellen, aber wenn man dann die Klasse Katze hat, die von der Basisklasse erbt, kann man darin dann die Funktion umschreiben so dass der Laut auch zur Katze passt.
+Das Program muss also so compiliert werden, dass auch zur Laufzeit noch festgestellt werden kann, was man genau vor sich hat (welches spezielle Haustier zB.).
+
+\subsection{override}
+Ist ein modifier, der angibt, dass man gerade explizit eine Funktion aus der Basisklasse überschreibt. Damit kann verhindert werden, dass man sich vertippt und aus versehen doch nicht überschreibt
 
 \section{int main() vs int main(void)}
 Beide sind in cpp gleichbedeutend. Der Unterschied ist nur in C, da main() bedeutet, dass die Fkt mit beliebeig vielen Parametern aufgerufen werden kann, wobei main(void) sagt, dass die Fkt nur ohne Parameter aufgerufen werden kann.
+
+\section{Inheritance/Vererbung}
+In Cpp kann man bei der Vererbung die modes public, protected und private mit angeben. Das bedeutet zB am Bsp von public, dass public members der Baseklasse in der abgeleiteten Klasse auch public bleiben und die protected members bleiben protected.
+
+Private scheint der default zu sein und das bedeutet, dass die public und protected member der baseklasse private in der abgeleiteten Klasse werden.
+
+Member die in der Baseklasse schon private waren werden gar nicht mit vererbt.
 
 
 \section{Fragen}
