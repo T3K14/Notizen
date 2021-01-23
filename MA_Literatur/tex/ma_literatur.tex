@@ -67,6 +67,16 @@ ist auch von Mezard und anscheinend das Paper wo SP introduced wurde? und damit 
 \end{itemize}
 \paragraph{Bisheriger Stand} Das Paper verallgemeinert den stochastic optimierungsfall so, dass statt des Erwartungswertes ein Risikomaß steht, welches den Erwartungswert beinhaltet aber eben noch mehr auf Risikoabneigung eingeht (Conditional Value at risk). Weiter hinten im Paper wird dann das two stage stochastic MST Problem aus Sec. \ref{sec:paper_on} aufgegriffen und dahingehend verallgemeinert, das habe ich mir aber noch nicht genauer angeschaut, da ich mich erst genauer in das Risikomaß einarbeiten müsste.
 
+\subsection{Imposing edges in Minimum Spanning Tree}
+\label{sec:paper_impose}
+\paragraph{Daten} Paper ist von 2019, finde es nicht bei WoS
+\paragraph{Verzeichnis} /von mir rausgesucht/1912.09360
+\paragraph{Status}
+\begin{itemize}
+\item 22.01.21 runtergeladen und Theorem 1 verstanden (path optimality condition)
+\end{itemize}
+\paragraph{Bisheriger Stand} Habe es gebraucht für Verständnis von path- und cut-optimality condition und habs runtergeladen, weil man sich das vllt mal anschauen könnte, ist auch nur 4 Seiten lang und es geht darum Kanten im MST zu erzwingen und wie sich das auf Kosten auswirkt
+
 
 \subsection{Uncertain Distribution-Minimum Spanning Tree Problem}
 \label{sec:paper_uncertain}
@@ -79,11 +89,30 @@ ist auch von Mezard und anscheinend das Paper wo SP introduced wurde? und damit 
 \paragraph{Bisheriger Stand} Das Paper baut auf der von Liu begründeten Uncertainty Theorie auf (siehe /von mir rausgesucht/ Why\_is\_there\_a\_need\_for\_uncertainty\_theory). Dabei geht es so wie ich das bisher verstehe darum, dass man, wenn man zu verteilten Daten wie zB Brückenstabilitäten keine richtigen Daten hat, Experten zu Rate ziehen muss, um die Werte abzuschätzen. Tut man dies, soll man aufgrund der höheren Varianz der geschätzeten Expertendaten laut Liu nicht mehr die klassische Wahrscheinlichkeitstheorie anwenden, sondern seine Uncertainty Theorie anwenden. Ich habe mich noch nicht in das Thema richtig eingearbeitet, aber es sieht sehr axiomatisch aus und recht analog zur Wahrscheinlichkeitstheorie. 
 In dem Paper selbst werden dann verschiedene uncertainty arten in bezug auf das MST beschrieben, aber ich will erst einmal Alex fragen, ob es sich lohnt da weiter in die Tiefe zu gehen. 
 
+\subsection{Path Optimality Conditions for Minimum Spanning Tree Problem withUncertain Edge Weights}
+\label{sec:paper_path_opt_uncertain}
+\paragraph{Daten} Paper ist von 2015, 16 Zitate bei WoS, wobei bis auf 2 alle Zitate auch irgenwas mit uncertain variables zu tun haben
+\paragraph{Verzeichnis} /von mir rausgesucht/2015PathOptimalityConditionsforUncertainMST-IJUFKS-manuscript
+\paragraph{Status / Bisheriger Stand}
+\begin{itemize}
+\item 22.01.21 runtergeladen und kurz eingelesen, hat mich auf path optimality condition gebracht, habe ich dank Paper aus \ref{sec:paper_impose} verstanden und in MA.tex reingeschrieben. Ansonsten wiederholt sich viel von \ref{sec:paper_uncertain} und ich will erst mit Alex drüber reden..
+\end{itemize}
+
+\subsection{On the approximability of robust spanning tree problems}
+\label{sec:paper_robust_minmax}
+\paragraph{Daten} Paper ist von 2010, 17 Zitate bei WoS
+\paragraph{Verzeichnis}  /von mir rausgesucht/1-s2.0-S0304397510005505-main
+\paragraph{Status / Bisheriger Stand}
+\begin{itemize}
+\item 23.01.21 runtergeladen und introduction durchgearbeitet: Es geht viel um die minmax/ minmax regret Versionen des Spannbaumproblems. Es wird auch über das two stage stochastic spanning tree problem gesprochen und dazu eine minmaxversion beschrieben. Hauptthema des Papers sind Approximations bzw inapproximability Beweise in Bezug auf minmax (regret) spanning tree.
+Es wird auch gezeigt, dass das 2 stage spanning tree problem nicht approximierbar within any constant ist (es sei denn P=NP) und within ($(1-\epsilon) \ln n$) für beliebiges $\epsilon >0$ unless $NP \subseteq DTIME^{poly \ log \ n}$. (was auch immer das bedeutet). Außerdem werden noch randomized approx. Algorithmen beschrieben, die eine $O(log^2 n)$ approx für minmax ST und 2 stage minmax ST beschreiben.
+\end{itemize}
+
 
 \section{Bücher}
 \subsection{Integer Programmingand CombinatorialOptimization}
 \label{sec:paper_on}
-Enthält zu dem Vortrag zu MST das Grundlagenpaper ``On Two-Stage Stochastic Minimum Spanning Trees'' ab Seite 330
+Enthält zu dem Vortrag zu MST das Grundlagenpaper ``On Two-Stage Stochastic Minimum Spanning Trees'' ab Seite 330 (ist von 2005)
 
 \paragraph{Status 12.01.21} In Paper eingelesen und Zusammenfassung geschrieben
 \paragraph{Zusammenfassung}	Das Paper beschreibt einen Algorithmus, der ein LP rundet und so zu einer Approximation kommt. Es werden einiger Lemmas bewiesen, so auch zum Blackboxfall und zum inflation factor.
@@ -97,10 +126,10 @@ Alle Zitatzahlen sind vom 12.01.21 on Web of science
 \item  \textbf{Uncertain Distribution-Minimum Spanning Tree Problem} (HAT EIGENE SEKTION \ref{sec:paper_uncertain}) (2016) (Status: /von mir rausgesucht/zhou2016, hat 5 Zitate)
 \item  Fuzzy alpha-minimum spanning tree problem: definition and solutions (2016) (Status: von den selben Autoren wie das Paper Uncertain Distribution-Minimum Spanning Tree Problem und beschreibt das MST mit fuzzy number edges, /von mir rausgesucht/zhou2016\_fuzzy, hat 6 Zitate)
 \item  The discrete sell or hold problem with constraints on asset values (2015) (Status: Ist ein anderes Thema und das Paper wird nur erwähnt zur Themeneinordnung, habs daher nicht runtergeladen, hat 0 Zitate)
-\item  \textbf{Path Optimality Conditions for Minimum Spanning Tree Problem with Uncertain Edge Weights} (2015) (Status: runtergeladen und sollte ich mir anschauen, /paper/von mir rausgesucht/2015PathOptimalityConditionsforUncertainMST-IJUFKS-manuscript hat 16 Zitate)
+\item  \textbf{Path Optimality Conditions for Minimum Spanning Tree Problem with Uncertain Edge Weights} (HAT EIGENE SEKTION \ref{sec:paper_path_opt_uncertain}) (2015) (Status: runtergeladen und sollte ich mir anschauen, /paper/von mir rausgesucht/2015PathOptimalityConditionsforUncertainMST-IJUFKS-manuscript hat 16 Zitate, wobei bis auf 2 alle Zitate auch irgenwas mit uncertain variables zu tun haben.)
 \item  \textbf{Totally unimodular stochastic programs} (2013) (Status: runtergeladen, wirkt wie ein anderes Thema zu vielleicht interessanter Methode und erwähnt das Paper auch nur einmal als Approx Alg. /von mir rausgesucht/Kong2013\_Article\_TotallyUnimodularStochasticPro, hat 5 Zitate) 
 \item  Sell or Hold: A simple two-stage stochastic combinatorial optimization problem (2012) (Status: komme über Bib nicht ran, klingt nach anderem Stochastik Optimization problem, hat 1 Zitat)
-\item  \textbf{On the approximability of robust spanning tree problems} (2011) (Status: runtergeladen, auf jeden Fall anschauen!, /von mir rausgesucht/1-s2.0-S0304397510005505-main, hat 17 Zitate) 
+\item  \textbf{On the approximability of robust spanning tree problems} (HAT EIGENE SEKTION \ref{sec:paper_robust_minmax}) (2011) (Status: runtergeladen, auf jeden Fall anschauen!, /von mir rausgesucht/1-s2.0-S0304397510005505-main, hat 17 Zitate) 
 \item  Commitment under uncertainty: Two-stage stochastic matching problems (2008) (Status: geht ums matching problem bei bipartiten Graphen, runtergeladen /von mir rausgesucht/1-s2.0-S0304397508005641-main, hat 19 Zitate)
 \item  \textbf{Hedging uncertainty: Approximation algorithms for stochastic optimization problems} (2006) (Status: runtergeladen, anschauen! /von mir rausgesucht/Ravi-Sinha2006\_Article\_HedgingUncertaintyApproximatio, hat 58 Zitate)
 \item  \textbf{Pay today for a rainy day: Improved approximation algorithms for demand-robust min-cut and shortest path problems} (2006) (Status: runtergeladen in /von mir rausgesucht/2006\_Book\_STACS2006 ab Seite 222, mal anschauen, hat 16 Zitate)

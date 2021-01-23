@@ -34,10 +34,39 @@
 \item Max-Sum
 \item integrality gap
 \item (conditional value at risk)
+\item Kruskal Alg.
 \end{itemize}
 
 \section{s-t-path, kürzester Pfad}
 Pfad zwischen zwei Knoten $s, t\in V$ eines Graphen, welcher minimale Länge bzgl. einer Kostenfunktion $c: E \rightarrow \mathbb{R}$ hat.
+
+\section{Cut}
+Ein Cut $C=(S,T)$ ist eine partition von $V$ eines Graphen in die zwei disjunkten Subsets $S$ und $T$.
+Als cut-set eines Cuts bezeichnet man die Menge der Kanten die einen Endpunkt in $S$ und den anderen in $T$ haben: $E' = \{ \{i,j\} \in E \ | \ i \in S, j \in T\}$. Und man sagt, eine Kante ist im Cut, wenn sie Element von $E'$ ist.
+
+\section{Tree Cut}
+Wenn man einen Spannbaum hat und eine Kante daraus entfernt, kann man sagen, dass dadurch einen Cut entsteht.
+
+\textit{Dadurch dass man eine Kante weglässt, bleiben zwei Komponenten übrig und deren Knotenmengen sind dann die Cutmengen.} 
+
+\section{Minimum spanning tree equivalente Formulierungen}
+\subsection{path optimality condition}
+Ein Spannbaum ist dann ein minimum Spannbaum von einem connected Graph if and only if it satisfies the path optimality condition:
+Für jede nontree Kante $\{i, j\}$ von $G$ gilt $w_{i,j} \ge w_{u,v}$ für alle Kanten $\{u, v\}$ im tree path $P_{i,j}$ der im Spannbaum die Knoten $i$ und $j$ verbindet.
+\textit{Wenn das nicht so wäre, könnte man einen neuen Spannbaum erzeugen, bei dem ich eine Kante mit größeren Kosten aus dem tree path durch die Kante $\{i,j\}$ ersetze und hätte so geringere Kosten, also kann der Ausgangsspannbaum nicht minimal gewesen sein.}
+\subsection{cut optimality condition}
+Ein Spannbaum ist dann MST von connected Graph $G$ if and only if it satisfies the cut optimality condition:
+Für jede tree Kante $\{i, j\}$ von $G$ gilt $w_{i,j} \le w_{u,v}$ für alle Kanten $\{u, v\}$ die im Cut sind, den man durch Entfernen von $\{i, j\}$ erhält.
+
+\textit{Mit 'im Cut sind' ist die Formulierung von oben gemeint. Die Aussage ist also die, wenn ich nen MST habe, dann kann ich wenn ich eine Kante daraus nehme und damit einen Cut erzeuge keine andere Kante finden mit der ich eine Brücke zwischen den Cutkomponenten bauen könnte, die ein geringeres Gewicht als die entfernte Kante hat.(fuer die alternative Kante werden Kanten in Betracht gezogen, die nicht Teil des geg. Spannbaums sind, sondern welche, die auch in dem erzeugten Cut sind.)}
+
+\section{Minmax spanning tree Problem}
+Im Paper Ontheapproximabilityofrobustspanningtreeproblems wurde ich zum ersten Mal auf diese Problemstellung aufmerksam. Es geht erstmal um das ein stage Problem des minimalen Spannbaumes mit uncertain (nicht im Sinne von Lius uncertain variables) edge weights. Es geht hier um das robust optimization setting, bei welchem alle möglichen Gewichtsrealisierungen als Szenarien aufgelistet werden, es allerdings darauf keine Wahrscheinlichkeitsverteilung gibt. Das minmax Kriterium ist nun dazu da, um trotzdem eine Entscheidung zu treffen. Sei $\phi$ die Menge aller Spannbäume des connected Graphen $G$, $\Gamma=(S_1, \dots, S_k)$ die Menge aller Szenarien (Kostenrealisierungen) und wir befinden uns im unbounded case, wo die Anzahl von Szenarien Teil des Inputs ist. Das minmax spanning tree problem ist nun so formuliert:
+\begin{align}
+\text{OPT} = \min_{T \in \phi} \max_{S \in \Gamma} \sum_{e \in T} c_e^S
+\end{align}
+\textit{Ich verstehe das so: Wir suchen also von allen Spannbäumen auf dem Graphen $G$ denjenigen $T$, für den der schlimmste Wert der Kosten am kleinsten ist. Wenn ich einen anderen Spannbaum nehmen würde, dann gibt es mindestens ein Szenario, bei welchem die Kosten größer werden würden, als sie es hier maximal werden können.}
+In dem Paper wird außerdem eine minmax Version für das two stage spanning tree problem beschrieben.
 
 \section{Matching}
 \subsection{Definition}
