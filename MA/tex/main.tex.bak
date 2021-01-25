@@ -65,7 +65,19 @@ Im Paper Ontheapproximabilityofrobustspanningtreeproblems wurde ich zum ersten M
 \begin{align}
 \text{OPT} = \min_{T \in \phi} \max_{S \in \Gamma} \sum_{e \in T} c_e^S
 \end{align}
-\textit{Ich verstehe das so: Wir suchen also von allen Spannbäumen auf dem Graphen $G$ denjenigen $T$, für den der schlimmste Wert der Kosten am kleinsten ist. Wenn ich einen anderen Spannbaum nehmen würde, dann gibt es mindestens ein Szenario, bei welchem die Kosten größer werden würden, als sie es hi}
+\textit{Ich verstehe das so: Wir suchen also von allen Spannbäumen auf dem Graphen $G$ denjenigen $T$, für den der schlimmste Wert der Kosten am kleinsten ist. Wenn ich einen anderen Spannbaum nehmen würde, dann gibt es mindestens ein Szenario, bei welchem die Kosten größer werden würden, als sie es hier maximal werden können.}
+In dem Paper wird außerdem eine minmax Version für das two stage spanning tree problem beschrieben.
+
+\section{Stochastic programming}
+Hier soll die allgemeine Formulierung für ein two-stage stochastic programming Problem dargestellt werden.
+\begin{align}
+\min_{x \in X} \{ f(x) + \mathbb{E}_\xi \left[ Q(x, \xi)\right] \},
+\end{align}
+wobei $Q(x, \xi)$ der optimale Wert des second-stage Problems.
+\begin{align}
+\min_y\{ q(y, \xi) \ | \ T(\xi)x + W(\xi)y = h(\xi) \}.
+\end{align}
+Dabei ist $x$ der first stage decision variable vector und $y$ der Vektor für die 2. Phase und $\xi(q, T,W, h)$ ist ein Zufallsvektor der die Daten des second stage Problems enthält. Das second stage problem kann man einfach als Optimierungsproblem welches unser vermeintlich optimales Verhalten nach Realisierung der unbekannten Daten beschreibt, oder man sieht dessen Lösung als recourse action an, wo der Term $W()\xi)y$
 
 \section{Matching}
 \subsection{Definition}

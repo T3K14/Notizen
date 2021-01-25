@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.8)  9 JAN 2021 20:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.8)  23 JAN 2021 22:17
 entering extended mode
 **./cpp_main.tex
 (cpp_main.tex
@@ -652,16 +652,80 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 ("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
-0.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
+9.
 ("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
+1.
+
+("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.33 \item SFINAE Prinzip?, enable_
+                                   if
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.34 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 ("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-0.
+6.
 
 ("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -669,35 +733,39 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 [1
 
 {C:/Users/rober/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
 
 (cpp_main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `cpp_main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 12869 strings out of 492445
- 214744 string characters out of 3119821
+ 12904 strings out of 492445
+ 215549 string characters out of 3119821
  435127 words of memory out of 3000000
- 17007 multiletter control sequences out of 15000+200000
+ 17036 multiletter control sequences out of 15000+200000
  9478 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,6n,61p,10105b,485s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm
 -super-t1.enc}<C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/cm-super/sfrm1000.pfb><C:/Users/rober/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/cm-super/sfsx1200.pfb><C:/Users/rober/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1440.pfb><C:/Users/rober/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on cpp_main.pdf (2 pages, 102854 bytes).
+lic/amsfonts/cm/cmmi10.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/rober/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rober/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/rober
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1000.pfb><C:
+/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx
+1200.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/c
+m-super/sfsx1440.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sftt1000.pfb>
+Output written on cpp_main.pdf (2 pages, 134086 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

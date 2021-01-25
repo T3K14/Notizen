@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.8)  23 JAN 2021 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.8)  25 JAN 2021 10:59
 entering extended mode
 **./ma_literatur.tex
 (ma_literatur.tex
@@ -667,38 +667,38 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 108
 ("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2] [3]
-Overfull \hbox (52.02066pt too wide) in paragraph at lines 134--135
-\T1/cmr/m/n/10 (Sta-tus: run-ter-ge-la-den, an-schau-en! /von mir rausgesucht/R
-avi-Sinha2006_Article_HedgingUncertaintyApproximatio,
+Overfull \hbox (42.19144pt too wide) in paragraph at lines 142--143
+\T1/cmr/m/n/10 (HAT EI-GE-NE SEK-TI-ON []1.11[]) /von mir rausgesucht/Ravi-Sinh
+a2006_Article_HedgingUncertaintyApproximatio,
  []
 
 
-Overfull \hbox (23.43597pt too wide) in paragraph at lines 135--136
+Overfull \hbox (23.43597pt too wide) in paragraph at lines 143--144
 \T1/cmr/bx/n/10 and shor-test path pro-blems \T1/cmr/m/n/10 (2006) (Sta-tus: ru
 n-ter-ge-la-den in /von mir raus-ge-sucht/2006_Book_STACS2006
  []
 
 
-Overfull \hbox (16.91257pt too wide) in paragraph at lines 136--137
+Overfull \hbox (16.91257pt too wide) in paragraph at lines 144--145
 \T1/cmr/m/n/10 (2005) (Sta-tus: run-ter-ge-la-den in Buch /von mir raus-ge-such
 t/2005_Book_ApproximationRandomizationAndC
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (ma_literatur.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `ma_literatur.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 12615 strings out of 492445
- 211807 string characters out of 3119821
+ 12621 strings out of 492445
+ 211880 string characters out of 3119821
  431429 words of memory out of 3000000
- 16717 multiletter control sequences out of 15000+200000
+ 16719 multiletter control sequences out of 15000+200000
  9941 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,6n,61p,10109b,485s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -715,9 +715,9 @@ Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1
 e1/public/cm-super/sfsx1000.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/cm-super/sfsx1200.pfb><C:/Users/rober/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on ma_literatur.pdf (4 pages, 181679 bytes).
+Output written on ma_literatur.pdf (4 pages, 183067 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
